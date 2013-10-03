@@ -1,0 +1,314 @@
+/* =Redefining Base
+-------------------------------------------------------------- */
+html,body {
+	margin:0 auto;
+	color:#333;
+	background-image: url(../images/bg.jpg);
+}
+
+#oxbody {
+position: absolute;
+width: 100%;
+text-align:center;
+top: 0px;
+}
+
+body.logged-in {
+top: 28px;
+}
+
+.displaying-map #oxbody {
+top: 350px;
+}
+
+.logged-in #oxbody {
+margin-top: 28px;
+}
+
+.container {
+width: 100% !important;
+}
+
+.clearfloat {
+	width:100%;
+	height:1px;
+	clear:both;
+}
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+.section-title, .highlight-content, .share-title {
+background: rgba(105,75,75,0.4) url('../images/bg-featured-box.png') no-repeat top left !important;
+-webkit-box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.3);
+-khtml-box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.3);
+-moz-box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.3);
+-o-box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.3);
+box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.3);
+-webkit-border-radius: 20px;
+-khtml-border-radius: 20px;
+-moz-border-radius: 20px;
+-o-border-radius: 20px;
+border-radius: 20px;
+padding: 20px;
+overflow: hidden;
+margin:0 auto;
+text-align:left;
+}
+
+.highlight-content {
+height: 200px;
+}
+
+.main-content, .section-title, .highlight-content, aside#sidebar-footer {
+margin: 0 20px;
+}
+
+
+
+/*.highlight-content h2 {
+color: #521010;
+float: left;
+width: 290px;
+height: 190px;
+text-align: center;
+text-shadow: 0px 0px 8px rgba(255,255,255,0.6);
+margin-right: 30px;
+}
+
+.highlights-list {
+margin-left: 340px;
+width: 500px;
+}*/
+
+a.associated {
+margin-right: 10px;
+width: 300px;
+padding:5px 10px;
+background:rgba(255,255,255,0.4);
+float:left;
+-webkit-border-radius: 8px;
+-khtml-border-radius: 8px;
+-moz-border-radius: 8px;
+-o-border-radius: 8px;
+border-radius: 8px;
+color:#fff;
+}
+
+a.associated:hover {
+background:rgba(255,255,255,0.8);
+color:#fff;
+}
+
+
+
+
+/* =Decorative Styles
+-------------------------------------------------------------- */
+.emboss {
+-webkit-box-shadow: inset 0 0 20px 0 rgba(68, 60, 19, 0.15);
+-khtml-box-shadow: inset 0 0 20px 0 rgba(68, 60, 19, 0.15);
+-moz-box-shadow: inset 0 0 20px 0 rgba(68, 60, 19, 0.15);
+-o-box-shadow: inset 0 0 20px 0 rgba(68, 60, 19, 0.15);
+box-shadow: inset 0 0 20px 0 rgba(68, 60, 19, 0.15);
+-webkit-border-radius: 20px;
+-khtml-border-radius: 20px;
+-moz-border-radius: 20px;
+-o-border-radius: 20px;
+border-radius: 20px;
+padding: 20px;
+	background:rgba(255,255,255,0.3);
+}
+
+.lighter {
+	background:rgba(210, 205, 95, 0.1);
+}
+
+
+/* =Header
+-------------------------------------------------------------- */
+#oxmasthead {
+width:100% !important;
+height:120px !important;
+margin:0 !important;
+padding: 0;
+text-align:center;
+background:url('../images/header-limit.png') repeat-x top center;
+}
+
+.oxheader {
+height:120px !important;
+margin:0 20px !important;
+padding: 0;
+background:url('../images/red-bar.png') repeat-x top center;
+}
+
+.oxheader h1 {
+width:320px;
+height:120px;
+margin:0;
+padding: 0;
+float:left;
+background:url('../images/oxpeckers-brandbar.jpg') left top;
+}
+
+.oxheader h1 a {
+text-indent:-999999px;
+display:block;
+height:100px;
+margin:auto 0;
+}
+
+#oxmasthead #oxmasthead-nav {
+width:320px;
+height:120px;
+margin:0;
+padding: 0;
+float:right;
+background:url('../images/header-end.png') right top;
+}
+
+#oxmasthead #oxmasthead-nav #searchform {
+	margin:30px 10px 10px 0;
+	float:right;
+}
+
+#oxmasthead #oxmasthead-nav #searchform input#s {
+	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
+	padding:5px 30px 5px 10px;
+	display:block;
+	margin:0;
+	border:0;
+	background:rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:0;-khtml-box-shadow:0;-moz-box-shadow:0;-o-box-shadow:0;box-shadow:0;
+	-webkit-transition:all 0.2s ease-in-out;-khtml-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;
+	-webkit-border-radius:5px;-khtml-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
+	color:#fff;
+	font-size:11px;
+	line-height:18px;
+	font-weight:300;
+	width:80px;
+}
+	
+#oxmasthead #oxmasthead-nav #searchform input#s:hover,#oxmasthead #oxmasthead-nav #searchform input#s:focus{
+	background:rgba(0, 0, 0, 0.7);
+	width:200px;
+}
+
+
+.thumb-highlights {
+	background:rgba(0,0,0,0.6);
+	height:140px;
+	width:140px;
+	margin:0 20px 0 10px;
+	float:left;
+-webkit-border-radius: 70px;
+-khtml-border-radius: 70px;
+-moz-border-radius: 70px;
+-o-border-radius: 70px;
+border-radius: 70px;
+	overflow:hidden;
+}
+
+.highlights-content .highlights-list aside.action {
+	float:right;
+	width:300px;
+}
+
+
+
+.single-post .content, .latestnews {
+margin: 20px 0 !important;
+float: left !important;
+text-align: left;
+padding: 30px;
+width:68% !important;
+}
+
+.latestnews {
+padding: 30px 0px 30px 35px !important;
+}
+
+
+li.post-columns {
+height:320px;
+margin: 0 40px 20px 0;
+background:none;
+float:left;
+max-width: 380px;
+}
+
+.thumb-post {
+	background:rgba(0,0,0,0.6);
+	background-position:-10px;
+	height:140px;
+	width:380px;
+	margin-bottom:5px;
+}
+
+
+#sidebar { float:right; width:26%; margin:20px 0 0 0 !important; }
+
+
+#sidebar-footer ul.widgets li {
+	float:left;
+	width:31%;
+	margin:0 2% 20px 2%;
+	text-align:left;
+}
+
+#sidebar-footer ul.widgets li:first-child {
+	margin:0 1% 20px 0;
+}
+
+#sidebar-footer ul.widgets li:last-child {
+	margin:0 0 20px 1%;
+}
+
+
+.wp-cpl-read-more a {
+font-style: normal !important;
+font-size:12px;
+}
+
+#sidebar .widgets .widget ul li {
+margin: 0;
+padding: 5px 0;
+text-align:left;
+font-size:100% !important;
+background:none !important;
+border:none !important;
+border-bottom: 1px dotted #521010 !important;
+}
+
+.app {
+	width:50px;
+	height:50px;
+-webkit-border-radius: 25px;
+-khtml-border-radius: 25px;
+-moz-border-radius: 25px;
+-o-border-radius: 25px;
+border-radius: 25px;
+float:left;
+margin:0 20px 100px 20px;
+	background:rgba(0,0,0,0.6);
+	text-indent:-99999px;
+}
+
+.footer-menu {
+	width:31%;
+	margin:0 20px 20px 0;
+	float:right;
+	text-align:left;
+}
+
+#jeo-share-widget {
+top: 40px;
+-webkit-border-radius: 20px;
+-khtml-border-radius: 20px;
+-moz-border-radius: 20px;
+-o-border-radius: 20px;
+border-radius: 20px;
+}

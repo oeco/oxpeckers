@@ -1,0 +1,414 @@
+/* = Map Containers
+-------------------------------------------------------------- */
+.map-container {
+	width:100% !important;
+	height:350px !important;
+	margin:0 !important;
+	min-height: 350px !important;
+	position:absolute !important;
+	top:-350px !important;
+}
+
+.map-container .map .leaflet-control-container .leaflet-top {
+/*left: 50%;
+right: 50%;*/
+top:0;
+}
+
+.leaflet-right, .leaflet-left {
+/*left: 50%;
+right: 50%;*/
+width:100%;
+top:0;
+}
+
+.leaflet-control {
+margin: 0 !important;
+height: 30px;
+}
+
+
+
+/* = Timeline
+-------------------------------------------------------------- */
+.jeo-date-range-slider {
+width: 618px !important;
+background: rgba(0, 0, 0, 0.33) !important;
+box-shadow: none !important;
+padding: 8px 30px 8px !important;
+margin: 0 180px 0 0 !important;
+top: 306px !important;
+right: 20px;
+height: 16px !important;
+-webkit-border-radius: 0 8px 8px 0;
+-khtml-border-radius: 0 8px 8px 0;
+-moz-border-radius: 0 8px 8px 0;
+-o-border-radius: 0 8px 8px 0;
+border-radius: 0 8px 8px 0;
+}
+
+
+
+/* = Zoom
+-------------------------------------------------------------- */
+.leaflet-control-zoom {
+left: 20px;
+width: 100px;
+height:67px;
+top: 271px;
+border: none;
+background: url('../images/bg-controller.png') no-repeat bottom left !important;
+padding:13px 130px 0 120px;
+}
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+float: left; margin:0 10px; padding:0; color:#fff;
+}
+
+a.leaflet-control-zoom-in, a.leaflet-control-zoom-out {
+background-color:rgba(255,255,255,0.8);
+color: #521010;
+border: none;
+width: 20px;
+height: 20px;
+line-height: 20px;
+font-size:20px;
+display: inline;
+text-align: center;
+text-decoration: none;
+padding: 0;
+text-shadow:0 0 5px rgba(0,0,0,0.5);
+-webkit-border-radius: 10px !important;
+-khtml-border-radius: 10px !important;
+-moz-border-radius: 10px !important;
+-o-border-radius: 10px !important;
+border-radius: 10px !important;
+font-weight:bolder;
+}
+
+
+.leaflet-bar a {
+    border-bottom: none !important;
+	border: none;
+}
+
+.leaflet-bar a, .leaflet-bar a:hover {
+	background-color: transparent !important;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+	text-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+
+
+/* = Full Screen
+-------------------------------------------------------------- */
+.jeo-fullscreen {
+float: right;
+right: 20px;
+top: 10px;
+position: absolute;
+}
+
+.map-fullscreen {
+margin: 0 !important;
+float: right;
+}
+
+a.map-fullscreen {
+ background-color:rgba(0,0,0,0.8);
+ color: #fff;
+border: none;
+width: 30px;
+height: 30px;
+line-height: 30px;
+font-size:15px;
+font-weight:bold;
+display: block;
+text-align: center;
+text-decoration: none;
+-webkit-border-radius: 8px;
+-khtml-border-radius: 8px;
+-moz-border-radius: 8px;
+-o-border-radius: 8px;
+border-radius: 8px;
+padding: 0;
+text-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+
+
+
+/* = Map Search
+-------------------------------------------------------------- */
+.leaflet-control.jeo-geocode {
+	width: 115px;
+	top: 10px;
+	right: 65px;
+	position: absolute;
+	height: 30px;
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+	background: rgba(0,0,0,0.8);
+}
+
+.map-search {
+margin: 0;
+padding: 0;
+border: none;
+border-bottom:none !important;
+top:20px;
+right:20px;
+}
+
+.map-search input {
+	padding:5px 10px !important;
+	color:#fff;
+	font-size: 11px;
+	font-weight:300;
+	line-height:20px;
+	letter-spacing: 0.03em;
+	font-family: "Share Regular";
+	text-shadow:1px 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+/*.mapsearch input#s {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:5px 30px 5px 10px;
+	display:block;
+	margin:0;
+	border:0;
+	background:rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:0;
+	-khtml-box-shadow:0;
+	-moz-box-shadow:0;
+	-o-box-shadow:0;
+	box-shadow:0;
+	-webkit-transition:all 0.2s ease-in-out;
+	-khtml-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+	transition:all 0.2s ease-in-out;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;border-radius:5px;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
+	color:#fff;
+	font-size:11px;
+	line-height:18px;
+	font-weight:300;
+	width:80px;
+}
+	
+.mapsearch input#s:focus{
+	background:rgba(0, 0, 0, 0.7);
+	width:200px;
+}*/
+
+
+/* = Legends
+-------------------------------------------------------------- */
+.map-legends {
+padding: 0px !important;
+background:none !important;
+border:none !important;
+overflow:hidden !important;
+-webkit-box-shadow:none !important;
+box-shadow:none !important;
+right: 20px;
+top: 18px;
+height: 292px;
+}
+
+.map-legends .map-legend {
+padding: 0px !important;
+background:none !important;
+border:none !important;
+}
+
+#rhinocount, #sharethis {
+padding: 10px;
+font-size:12px;
+text-align:center;
+color:#FFF;
+width:140px;
+margin-bottom:10px;
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+background:rgba(0,0,0,0.8);
+overflow:hidden;
+}
+
+#sharethis {
+background: rgba(90,20,10,0.8);
+}
+
+#sharethis:hover {
+background: rgba(90,20,10,1);
+}
+
+#sharethis h1.share {
+margin:0;
+padding: 0;
+color:#fff;
+font-size:15px;
+line-height: 12px;
+letter-spacing:0.01em;
+text-shadow:0px 0px 4px rgba(255,255,255,0.4);
+}
+
+#sharethis h1.share a {
+color:#fff !important;
+}
+
+#sharethis h1.share a {
+color:#fff;
+text-shadow:0px 0px 4px rgba(255,255,255,0.8);
+}
+
+#rhinocount h1.rhinoicon {
+background: url('../images/rhinoicon.png') no-repeat center top;
+padding-top: 20px;
+font-size:11px;
+line-height: 28px;
+margin:0;
+font-weight:300;
+color:#636363;
+width:140px;
+text-shadow:0px 0px 4px rgba(0,0,0,0.4);
+}
+
+#rhinocount h3.count {
+padding: 0;
+font-size:26px;
+line-height: 28px;
+margin:0;
+color:#fff;
+text-shadow:0px 0px 4px rgba(255,255,255,0.4);
+}
+
+#rhinocount h3.count span {
+font-size:12px;
+font-weight:300;
+color:#ccc;
+}
+
+#rhinolegend {
+padding: 10px;
+width:140px;
+margin-bottom:10px;
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+background:rgba(0,0,0,0.8);
+overflow:hidden;
+}
+
+#rhinolegend h3.rhinoitem {
+padding: 0 0 0 30px;
+font-size:12px;
+line-height:28px;
+font-weight:bold;
+text-align:left;
+color:#FFF;
+margin:0;
+text-shadow:0px 0px 4px rgba(255,255,255,0.4);
+}
+
+#prisons {
+background: url('../images/marker-poucher-prison.png') no-repeat center left;
+}
+
+#death {
+background: url('../images/marker-rhino.png') no-repeat center left;
+}
+
+#related {
+background: url('../images/marker-pouchers-death.png') no-repeat center left;
+}
+
+
+
+
+/* = Featured Content on Map
+-------------------------------------------------------------- */
+.mapfeat-container {
+top: -350px;
+z-index: 6;
+width: 340px;
+height: 271px;
+margin: 0;
+max-width: 340px;
+left: 20px;
+right: 0;
+position: absolute;
+background: url('../images/bg-featured-map.png') no-repeat bottom left !important;
+}
+
+.posts-section.featured {
+position: relative;
+width: 320px;
+height: 320px;
+text-align:left;
+border-bottom: none !important;
+}
+
+.featured-content {
+width:300px;
+height:240px;
+overflow: hidden;
+position:relative;
+top:0;
+background:none;
+float:left;
+padding:30px 20px 0 20px;
+text-align: left;
+text-shadow:0px 0px 4px rgba(255,255,255,0.6);
+}
+
+.featured-list {
+overflow: hidden;
+padding:0 !important;
+}
+
+/*.posts-section.featured .container{padding-top:20px;}
+
+.posts-section.featured .container .featured-content{position:relative;z-index:3;background:rgba(255, 255, 255, 0.9);-webkit-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-khtml-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-moz-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-o-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-webkit-border-radius:3px;-khtml-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding:20px;overflow:hidden;}
+
+.posts-section.featured .container .featured-content li{position:relative;top:0;left:-800px;-webkit-transition:left 0.2s ease-in-out;-khtml-transition:left 0.2s ease-in-out;-moz-transition:left 0.2s ease-in-out;-o-transition:left 0.2s ease-in-out;transition:left 0.2s ease-in-out;height:0;margin:0;}
+
+.posts-section.featured .container .featured-content li.active{left:0;height:auto;}
+
+
+.featured-content{position:relative;z-index:3;background:rgba(255, 255, 255, 0.9);-webkit-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-khtml-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-moz-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-o-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-webkit-border-radius:3px;-khtml-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding:20px;overflow:hidden;}*/
+
+.mapfeatured-content li{position:relative;top:0;left:-800px;-webkit-transition:left 0.2s ease-in-out;-khtml-transition:left 0.2s ease-in-out;-moz-transition:left 0.2s ease-in-out;-o-transition:left 0.2s ease-in-out;transition:left 0.2s ease-in-out;height:0;margin:0;}
+
+.mapfeatured-content li.active{left:0;height:auto;}
+
+.leaflet-control.jeo-filter-layers {
+background: rgba(0,0,0,0.8);
+width: 90px;
+top: 307px;
+left: 370px;
+}
+
+ul.switch-layers li {
+	border-bottom:none;
+	color:#fff;
+}
+
+

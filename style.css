@@ -1,0 +1,13 @@
+/*
+ Theme Name:     Oxpeckers
+ Theme URI:      http://cardume.github.io/jeo/
+ Description:    A Jeo Child Theme for Oxpeckers
+ Author:         Hebert Valois
+ Author URI:     http://hvalois.com
+ Template:       jeo
+ Version:        1.0.0
+*/
+
+/* =Imports styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../jeo/style.css');

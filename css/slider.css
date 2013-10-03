@@ -1,0 +1,57 @@
+/* =Slider Styles
+-------------------------------------------------------------- */
+.slider-controllers{
+	position:relative;
+	z-index:3;
+	margin:0;
+}
+
+.slider-controllers ul{
+	margin:0;
+	padding:0;
+}
+
+.slider-controllers ul li{
+	width:10px;
+	height:10px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	float:left;margin:0 0 0 10px;
+	text-indent:-9999px;
+	overflow:hidden;
+	background:rgba(255, 255, 255, 0.8);
+	-webkit-box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.5);
+	-khtml-box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.5);
+	-o-box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.5);
+	cursor:pointer;
+	-webkit-transition:all 0.2s ease-in-out;
+	-khtml-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+	transition:all 0.2s ease-in-out;
+}
+
+.slider-controllers ul li.active{
+	background:#521010;
+	-webkit-transform:scale(1.5);
+	-khtml-transform:scale(1.5);
+	-moz-transform:scale(1.5);
+	-o-transform:scale(1.5);
+	transform:scale(1.5);
+}
+
+.slider-controllers ul li:hover{
+	-webkit-transform:scale(1.25);
+	-khtml-transform:scale(1.25);
+	-moz-transform:scale(1.25);
+	-o-transform:scale(1.25);
+	transform:scale(1.25);
+	background-color: #F7EDDD;
+}
+
+.highlights-list li{position:relative;top:0;left:-800px;-webkit-transition:left 0.2s ease-in-out;-khtml-transition:left 0.2s ease-in-out;-moz-transition:left 0.2s ease-in-out;-o-transition:left 0.2s ease-in-out;transition:left 0.2s ease-in-out;height:0;margin:0;}.highlights-list li.active{left:0;height:auto;}

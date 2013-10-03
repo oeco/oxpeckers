@@ -1,0 +1,184 @@
+/* =Typography Styles
+-------------------------------------------------------------- */
+
+/* Font Import */
+@font-face {
+   font-family: 'Share Regular';
+   src: url('../share-font/Share-Regular-webfont.eot');
+   src: local('�'), url('../share-font/Share-Regular-webfont.woff') format('woff'), url('../share-font/Share-Regular-webfont.ttf') format('truetype'), url('../share-font/Share-Regular-webfont.svg#webfontOTINA1xY') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Share Bold';
+   src: url('../share-font/Share-Bold-webfont.eot');
+   src: local('�'), url('../share-font/Share-Bold-webfont.woff') format('woff'), url('../share-font/Share-Bold-webfont.ttf') format('truetype'), url('../share-font/Share-Bold-webfont.svg#webfontOTINA1xY') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Share Italic';
+   src: url('../share-font/Share-Italic-webfont.eot');
+   src: local('�'), url('../share-font/Share-Italic-webfont.woff') format('woff'), url('../share-font/Share-Italic-webfont.ttf') format('truetype'), url('../share-font/Share-Italic-webfont.svg#webfontOTINA1xY') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Share Italic Bold';
+   src: url('../share-font/Share-BoldItalic-webfont.eot');
+   src: local('�'), url('../share-font/Share-BoldItalic-webfont.woff') format('woff'), url('../share-font/Share-BoldItalic-webfont.ttf') format('truetype'), url('../share-font/Share-BoldItalic-webfont.svg#webfontOTINA1xY') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+html,body {
+	font:17px/22px;
+	font-family: "Share Regular","Open Sans","Helvetica","Arial",sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Share Bold","Open Sans","Helvetica","Arial",sans-serif;
+}
+
+#oxbody a {
+	color: #521010 !important;
+	text-decoration:none;
+}
+
+#oxbody a:hover {
+	color: #600 !important;
+}
+
+
+.latestnews .post-header h3 {
+	font-size: 16px;
+	line-height: 20px;
+	height: 45px;
+	overflow: hidden;
+	font-weight: 100;
+	margin: 0;
+	padding-top: 5px;
+	border-top: 1px solid #521010;
+}
+
+.latestnews h2, .textwidget h3, h2.widget-title, .highlight-content h2 {
+	font-size: 16px;
+	line-height:20px;
+	margin-bottom: 20px;
+	display: block;
+	text-align:left;
+	letter-spacing:0.06em;
+	text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+}
+
+.latestnews h2 {
+	color: #521010;
+	font-size:18px;
+	line-height:18px;
+}
+
+.textwidget {
+	text-align:left;
+}
+
+.textwidget h3 {
+	color: #fff;
+	text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+}
+
+h2.widget-title {
+	color: #000;
+	border-bottom:1px solid #521010; 
+}
+
+.post-excerpt  {
+	height:60px !important;
+	overflow:hidden !important;
+	margin:0 0 5px 0 !important
+}
+
+.post-excerpt p {
+	line-height:20px !important;
+	margin:0 !important;
+}
+
+.latestnews aside.actions {
+	line-height: 22px;
+	font-size: 12px;
+	font-weight: 600;
+	text-align: right;
+	border-top: 1px solid #E6E6E6;
+	padding-top: 3px;
+}
+
+.find-on-map {
+	float: left;
+	vertical-align: top;
+}
+
+p.credits {
+	font-size:12px;
+	margin: 5px 0 !important;
+}
+
+
+.featured-list .post-text {
+	text-shadow: 0px 0px 3px rgba(255,255,255,0.4);
+}
+
+.mapfeatured-content .post-header h3 {
+	font-size:24px;
+	line-height:24px;
+	height:48px;
+	margin-bottom:5px;
+}
+
+.featured-list p.credits {
+	color:#FFF;
+	text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+	font-weight:600;
+	margin-bottom:10px;
+}
+
+.featured-list .post-content .post-excerpt {
+	font-weight:600;
+	margin:0 0 20px 0 !important;
+	min-height:120px;
+	height:120px;
+	overflow:hidden;
+}
+
+.featured-list aside.actions {
+	line-height: 22px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+
+#get-involved {
+padding: 15px;
+margin-right: 10px;
+}
+
+#get-involved h3 {
+	padding-left: 70px;
+	margin:0 !important;
+	font-size:32px;
+	line-height:26px;
+}
+
+#get-involved p {
+	padding-left: 70px;
+	margin:0 !important;
+	line-height:20px;
+	padding-top:5px;
+}
+
+
