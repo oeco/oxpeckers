@@ -11,7 +11,12 @@
 
 			if(m.latitude && m.longitude) {
 
-				var marker = L.marker([m.latitude, m.longitude]);
+				var marker = L.marker([m.latitude, m.longitude], {
+					riseOnHover: true,
+					riseOffset: 9999,
+					clickable: false,
+					keyboard: false
+				});
 
 				m._marker = marker;
 
@@ -102,7 +107,7 @@
 
 	function markerHtml(value, m) {
 
-		return '<div class="rhino-deaths">' + value + '</div>';
+		return '<div class="rhino-deaths">' + value + '<div class="bubble-container"><div class="bubble-content">Rhino deaths in ' + m.location + '</div></div></div>';
 
 	}
 
