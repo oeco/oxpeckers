@@ -11,3 +11,13 @@ p {
 	font-size: 18px !important;
 	line-height: 24px !important;
 }
+
+#wpadminbar {
+	display: none !important;
+}
+
+html,
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}

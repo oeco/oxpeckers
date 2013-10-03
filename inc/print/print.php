@@ -37,8 +37,16 @@ class Oxpeckers_Print {
 					<div id="oxpeckers-print">
 						<h2><?php bloginfo('name'); ?></h2>
 						<h1><?php the_title(); ?></h1>
+						<img src="<?php echo $this->get_map_image_url(); ?>" />
 						<?php the_content(); ?>
 					</div>
+					<script type="text/javascript">
+						jQuery(document).ready(function($) {
+							$('body').imagesLoaded(function() {
+								window.print();
+							});
+						});
+					</script>
 					<?php
 					$this->template_footer();
 				endwhile;
@@ -84,6 +92,35 @@ class Oxpeckers_Print {
 		</body>
 		</html>
 		<?php
+	}
+
+	function get_map_image_url() {
+
+		$map_id = jeo_get_the_ID();
+		$coordinates = jeo_get_marker_coordinates();
+
+		// print image url
+		$print_settings = array(
+			'map_id_or_layers' => false,
+			'lat' => null,
+			'lon' => null,
+			'zoom' => null
+		);
+
+		$legend = jeo_get_map_legend($map_id);
+		if($legend)
+			echo '<div id="print-legend">' . $legend . '</div>';
+		
+		$print_settings['map_id_or_layers'] = $map_id;
+
+		$print_settings['lat'] = $coordinates[1];
+		$print_settings['lon'] = $coordinates[0];
+		$print_settings['zoom'] = jeo_get_map_max_zoom();
+
+		$image_url = jeo_get_mapbox_image($print_settings['map_id_or_layers'], 640, 400, $print_settings['lat'], $print_settings['lon'], $print_settings['zoom']);
+
+		return $image_url;
+
 	}
 
 }
