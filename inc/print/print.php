@@ -38,6 +38,11 @@ class Oxpeckers_Print {
 						<h2><?php bloginfo('name'); ?></h2>
 						<h1><?php the_title(); ?></h1>
 						<img src="<?php echo $this->get_map_image_url(); ?>" />
+						<?php
+						$legend = jeo_get_map_legend($map_id);
+						if($legend)
+							echo '<div id="print-legend">' . $legend . '</div>';
+						?>
 						<?php the_content(); ?>
 					</div>
 					<script type="text/javascript">
@@ -106,10 +111,6 @@ class Oxpeckers_Print {
 			'lon' => null,
 			'zoom' => null
 		);
-
-		$legend = jeo_get_map_legend($map_id);
-		if($legend)
-			echo '<div id="print-legend">' . $legend . '</div>';
 		
 		$print_settings['map_id_or_layers'] = $map_id;
 
