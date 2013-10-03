@@ -1,0 +1,15 @@
+.map .rhino-deaths {
+	background: #f00;
+	color: #fff;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: -30px;
+	margin-left: -15px;
+	text-align: center;
+}
