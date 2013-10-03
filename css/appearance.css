@@ -61,7 +61,7 @@ text-align:left;
 height: 200px;
 }
 
-.main-content, .section-title, .highlight-content, aside#sidebar-footer {
+.main-content, .section-title, .highlight-content, aside#sidebar-footer, .partners {
 margin: 0 20px;
 }
 
@@ -296,6 +296,47 @@ margin:0 20px 100px 20px;
 	background:rgba(0,0,0,0.6);
 	text-indent:-99999px;
 }
+
+
+.partners {
+	text-align: center;
+	height: 160px;
+}
+
+.ami, .chinaafrica, .fair, .hacks, .ancir, .anic {
+	text-indent:-99999px;
+	width: 160px;
+	height: 160px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.ami {
+	background: url('../images/brands/AMI.png');
+}
+
+.chinaafrica {
+	background: url('../images/brands/China_AfricaReportingProject.png');
+}
+
+.fair {
+	background: url('../images/brands/fair.png');
+}
+
+.hacks {
+	background: url('../images/brands/hackshackersafrica.png');
+}
+
+.ancir {
+	background: url('../images/brands/ANCIR.png');
+}
+
+.anic {
+	background: url('../images/brands/anic.png');
+	float:right;
+}
+
 
 .footer-menu {
 	width:31%;

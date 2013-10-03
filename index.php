@@ -16,14 +16,12 @@ if(is_home() || is_front_page()) {
 
 <div class="container">
 
-		<div class="main-content">
-    
-<div class="<?php if( is_front_page()) { echo "latestnews emboss"; } ?>">
-		<!--<div class="twelve columns">-->
-			<h2><?php _e('Latest articles', 'jeo'); ?></H2>
-		<!--</div>-->
-<?php get_template_part('loop'); ?>
-</div>
+	<div class="main-content">
+
+	<div class="<?php if( is_front_page()) { echo "latestnews emboss"; } ?>">
+		<h2><?php _e('Latest articles', 'jeo'); ?></H2>
+		<?php get_template_part('loop'); ?>
+	</div>
 
 	<aside id="sidebar">
 		<ul class="widgets">
@@ -32,6 +30,14 @@ if(is_home() || is_front_page()) {
 	</aside>
     
     </div>
+
+    <div class="partners">
+    	<div class="ami">AMI</div>
+    	<div class="chinaafrica">China Africa Reporting Project</div>
+    	<div class="fair">Fair</div>
+    	<div class="hacks">HacksHackers Africa</div>
+    </div>
+
 </div>
 
 <?php get_footer(); ?>
