@@ -12,4 +12,6 @@ function oxpeckers_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'oxpeckers_scripts' );
 
+include_once(STYLESHEETPATH . '/inc/print/print.php');
+
 ?>

@@ -1,0 +1,24 @@
+/*
+ * Oxpeckers print css
+ */
+
+* {
+	background: #fff !important;
+	color: #000 !important;
+	font-family: serif !important;
+}
+
+p {
+	font-size: 18px !important;
+	line-height: 24px !important;
+}
+
+#wpadminbar {
+	display: none !important;
+}
+
+html,
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
