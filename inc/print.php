@@ -81,3 +81,5 @@ class Oxpeckers_Print {
 	}
 
 }
+
+$GLOBALS['oxpeckers_print'] = new Oxpeckers_Print();
