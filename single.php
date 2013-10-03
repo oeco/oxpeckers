@@ -17,9 +17,9 @@
 
 		<section class="content emboss">
 
-					<?php the_content(); ?>
-
 					<p class="location"><?php the_field('post_location'); ?></p>
+
+					<?php the_content(); ?>
 
 					<a href="<?php the_field('get_the_data'); ?>" class="associated"><?php _e('Download the Data', 'jeo'); ?></a>
 					<a href="<?php the_field('related_document'); ?>" class="associated"><?php _e('Related Document', 'jeo'); ?></a>

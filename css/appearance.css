@@ -233,11 +233,9 @@ padding: 30px 0px 30px 35px !important;
 
 
 li.post-columns {
-height:320px;
 margin: 0 40px 20px 0;
 background:none;
 float:left;
-max-width: 380px;
 }
 
 .thumb-post {
