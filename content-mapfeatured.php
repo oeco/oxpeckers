@@ -1,13 +1,9 @@
 <div class="mapfeat-container">
-<?php query_posts(array('cat' => 2, 'posts_per_page' => 4)); ?>
+<?php query_posts(array('cat' => 2,6,7, 'posts_per_page' => 4)); ?>
 	<?php if(have_posts()) : the_post(); ?>
 		<section id="featured-content" class="mapfeatured-content">
 			<?php //$map_id = jeo_map(null, false, true); ?>
 			
-				<!--<div class="eleven columns">
-					<h2>Highlights</h2>-->
-				<!--</div>
-				<div class="four columns">-->
 					<div class="featured-content">
 						<ul class="featured-list">
 							<?php $class = 'slider-item'; ?>
@@ -37,7 +33,6 @@
 								</li>
 							<?php $i++; endwhile; ?>
 						</ul>
-					<!--</div>-->
 					<div class="slider-controllers">
 						<ul>
 							<?php $i = 0; while(have_posts()) : the_post(); $i++; ?>
@@ -49,7 +44,7 @@
 			<!----></div>
 		</section>
 		<script type="text/javascript">
-			jeo.ui.featuredSlider('highlights-content');
+			jeo.ui.featuredSlider('featured-content');
 //			jeo.ui.featuredSlider('highlights-content', '<?php //echo $map_id; ?>');
 		</script>
 	<?php endif; ?>

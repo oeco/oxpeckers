@@ -243,9 +243,10 @@ max-width: 380px;
 .thumb-post {
 	background:rgba(0,0,0,0.6);
 	background-position:-10px;
-	height:140px;
-	width:380px;
+	height:150px;
+	width:300px;
 	margin-bottom:5px;
+	float:left;
 }
 
 
@@ -297,11 +298,10 @@ margin:0 20px 100px 20px;
 	text-indent:-99999px;
 }
 
-
 .partners {
-	text-align: center;
-	height: 160px;
-	min-width: 960px;
+height: 160px;
+width: 700px;
+margin: 0 auto 30px;
 }
 
 .ami, .chinaafrica, .fair, .hacks, .ancir, .anic {
@@ -328,11 +328,11 @@ margin:0 20px 100px 20px;
 }
 
 .ancir {
-	background: url('../images/brands/ANCIR.png') no-repeat center left;
+	background: url('../images/brands/ANCIR.png') no-repeat center center;
 }
 
 .anic {
-	background: url('../images/brands/anic.png') no-repeat center right;
+	background: url('../images/brands/anic.png') no-repeat center center;
 	float:right;
 	width: 210px;
 }

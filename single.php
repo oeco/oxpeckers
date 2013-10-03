@@ -14,23 +14,16 @@
                 <div class="main-content">
                 
 	<article id="content" class="single-post">
-		<!--<header class="single-post-header" class="clearfix">
-				<div class="three columns offset-by-one">
-					<div class="post-meta">
-						
-					</div>
-				</div>
-				</div>
-			</div>
-		</header>-->
+
 		<section class="content emboss">
-			<!--<div class="container">
-				<div class="eight columns">-->
+
 					<?php the_content(); ?>
-				<!--</div>
-				<div class="three columns offset-by-one">-->
-				<!--</div>
-			</div>-->
+
+					<p class="location"><?php the_field('post_location'); ?></p>
+
+					<a href="<?php the_field('get_the_data'); ?>" class="associated"><?php _e('Download the Data', 'jeo'); ?></a>
+					<a href="<?php the_field('related_document'); ?>" class="associated"><?php _e('Related Document', 'jeo'); ?></a>
+
 		</section>
 					<aside id="sidebar">
 						<ul class="widgets">

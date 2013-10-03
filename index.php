@@ -19,7 +19,7 @@ if(is_home() || is_front_page()) {
 	<div class="main-content">
 
 	<div class="<?php if( is_front_page()) { echo "latestnews emboss"; } ?>">
-		<h2><?php _e('Latest articles', 'jeo'); ?></H2>
+		<h2><?php _e('Latest articles', 'jeo'); ?></h2>
 		<?php get_template_part('loop'); ?>
 	</div>
 
@@ -31,13 +31,13 @@ if(is_home() || is_front_page()) {
     
     </div>
 
-    <div class="partners">
-    	<div class="ami">AMI</div>
-    	<div class="chinaafrica">China Africa Reporting Project</div>
-    	<div class="fair">Fair</div>
-    	<div class="hacks">HacksHackers Africa</div>
-    </div>
+</div>
 
+<div class="partners">
+    <div class="ami">AMI</div>
+    <div class="chinaafrica">China Africa Reporting Project</div>
+    <div class="fair">Fair</div>
+    <div class="hacks">HacksHackers Africa</div>
 </div>
 
 <?php get_footer(); ?>
