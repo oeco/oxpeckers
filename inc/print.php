@@ -28,15 +28,20 @@ class Oxpeckers_Print {
 	function template_redirect() {
 		global $wp_query;
 		if($wp_query->get('print') && is_single()) {
-			$this->template_header();
-			?>
-			<div id="oxpeckers-print">
-				<h2><?php bloginfo('name'); ?></h2>
-				<h1><?php the_title(); ?></h1>
-				<?php the_content(); ?>
-			</div>
-			<?php
-			$this->template_footer();
+			if(have_posts()) :
+				while(have_posts()) :
+					the_post();
+					$this->template_header();
+					?>
+					<div id="oxpeckers-print">
+						<h2><?php bloginfo('name'); ?></h2>
+						<h1><?php the_title(); ?></h1>
+						<?php the_content(); ?>
+					</div>
+					<?php
+					$this->template_footer();
+				endwhile;
+			endif;
 			exit;
 		}
 	}
