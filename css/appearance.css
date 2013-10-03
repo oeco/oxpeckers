@@ -301,40 +301,40 @@ margin:0 20px 100px 20px;
 .partners {
 	text-align: center;
 	height: 160px;
+	min-width: 960px;
 }
 
 .ami, .chinaafrica, .fair, .hacks, .ancir, .anic {
 	text-indent:-99999px;
 	width: 160px;
 	height: 160px;
-	background-position: center center;
-	background-repeat: no-repeat;
 	float: left;
 }
 
 .ami {
-	background: url('../images/brands/AMI.png');
+	background: url('../images/brands/AMI.png') no-repeat center center;
 }
 
 .chinaafrica {
-	background: url('../images/brands/China_AfricaReportingProject.png');
+	background: url('../images/brands/China_AfricaReportingProject.png') no-repeat center center;
 }
 
 .fair {
-	background: url('../images/brands/fair.png');
+	background: url('../images/brands/fair.png') no-repeat center center;
 }
 
 .hacks {
-	background: url('../images/brands/hackshackersafrica.png');
+	background: url('../images/brands/hackshackersafrica.png') no-repeat center center;
 }
 
 .ancir {
-	background: url('../images/brands/ANCIR.png');
+	background: url('../images/brands/ANCIR.png') no-repeat center left;
 }
 
 .anic {
-	background: url('../images/brands/anic.png');
+	background: url('../images/brands/anic.png') no-repeat center right;
 	float:right;
+	width: 210px;
 }
 
 
