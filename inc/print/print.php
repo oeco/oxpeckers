@@ -126,6 +126,19 @@ class Oxpeckers_Print {
 
 	}
 
+	function get_print_url($post_id = false) {
+
+		global $post;
+		$post_id = $post_id ? $post_id : $post->ID;
+
+		return add_query_arg(array('print' => 1), get_permalink($post_id));
+
+	}
+
 }
 
 $GLOBALS['oxpeckers_print'] = new Oxpeckers_Print();
+
+function oxpeckers_get_print_url($post_id = false) {
+	return $GLOBALS['oxpeckers_print']->get_print_url($post_id);
+}
