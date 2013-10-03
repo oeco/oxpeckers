@@ -39,9 +39,11 @@ class Oxpeckers_Print {
 						<h1><?php the_title(); ?></h1>
 						<img src="<?php echo $this->get_map_image_url(); ?>" />
 						<?php
+						/*
 						$legend = jeo_get_map_legend($map_id);
 						if($legend)
 							echo '<div id="print-legend">' . $legend . '</div>';
+						*/
 						?>
 						<?php the_content(); ?>
 					</div>
