@@ -18,6 +18,10 @@
 	line-height: 20px;
 }
 
+.leaflet-top.leaflet-right {
+	right: 180px;
+}
+
 /*
 
 .map-container .map .leaflet-control-container .leaflet-top {
