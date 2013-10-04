@@ -1,11 +1,6 @@
-<?php $query = new WP_Query( 'cat=5' ); ?>
-
-<?php if( $query->have_posts()) : ?>
-	<!-- <section class="posts-section emboss">
-		<div class="container">-->
+<?php if( have_posts()) : ?>
 			<ul class="posts-list">
-				<?php while($query->have_posts()) : $query->the_post(); ?>
-<!--					<li id="post-<?php //the_ID(); ?>" <?php //post_class('three columns'); ?>>-->
+				<?php while(have_posts()) : the_post(); ?>
 					<li id="post-<?php the_ID(); ?>" class="post-columns">
 						<article id="post-<?php the_ID(); ?>">
                         	<div class="thumb-post">
@@ -31,15 +26,13 @@
 								</p>
 							</section>
 							<aside class="actions clearfix">
-								<?php //echo jeo_find_post_on_map_button(); ?>
+								<?php echo jeo_find_post_on_map_button(); ?>
 								<a href="<?php the_permalink(); ?>"><?php _e('Read more', 'jeo'); ?></a>
 							</aside>
 						</article>
 					</li>
 				<?php endwhile; ?>
 			</ul>
-		<!--</div>
-	</section>-->
 
 <?php wp_reset_postdata(); ?>
 
