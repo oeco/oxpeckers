@@ -1,4 +1,4 @@
-.map .rhino-deaths {
+.map .rhino-crisis {
 	background: #f00;
 	color: #fff;
 	-webkit-border-radius: 15px;
@@ -15,11 +15,11 @@
 	position:relative;
 }
 
-.map .rhino-deaths:hover .bubble-container {
+.map .rhino-crisis:hover .bubble-container {
 	display: block;
 }
 
-.map .rhino-deaths .bubble-container {
+.map .rhino-crisis .bubble-container {
 	display: none;
 	position: absolute;
 	bottom: 30px;
@@ -28,7 +28,7 @@
 	margin-left: -70px;
 }
 
-.map .rhino-deaths .bubble-container:after {
+.map .rhino-crisis .bubble-container:after {
 	content: '';
 	width: 0px;
 	height: 0px;
@@ -41,7 +41,7 @@
 	margin-left: -7px;
 }
 
-.map .rhino-deaths .bubble-container .bubble-content {
+.map .rhino-crisis .bubble-container .bubble-content {
 	margin-bottom: 10px;
 	background: #333;
 	color: #f0f0f0;
@@ -51,5 +51,5 @@
 }
 
 .leaflet-marker-pane > * {
-	position: relative;
+	position: absolute;
 }
