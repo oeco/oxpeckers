@@ -240,10 +240,9 @@ float:left;
 
 .thumb-post {
 	background:rgba(0,0,0,0.6);
-	background-position:-10px;
-	height:150px;
+	height:140px;
 	width:300px;
-	margin-bottom:5px;
+	margin:0 10px 5px 0;
 	float:left;
 }
 
