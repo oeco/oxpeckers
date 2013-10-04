@@ -25,7 +25,7 @@ if(is_home() || is_front_page()) {
 			<?php query_posts(array('cat' => 3)); ?>
 			<div class="more-stories">
 				<h3><?php _e('More stories', 'jeo'); ?></h3>
-				<?php get_template_part('loop'); ?>
+				<?php get_template_part('loop', 'small'); ?>
 			</div>
 			<?php wp_reset_query(); ?>
 		</div>
