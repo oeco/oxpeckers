@@ -15,6 +15,7 @@ add_action('wp_enqueue_scripts', 'oxpeckers_scripts', 100);
 function home_page_query($query) {
 	if($query->is_main_query() && (is_front_page() || is_home())) {
 		$query->set('cat', 5);
+		$query->set('posts_per_page', 4);
 	}
 	return $query;
 }
@@ -30,6 +31,10 @@ add_filter('jeo_marker_base_query', 'map_marker_query');
 
 
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'medium', 300, 140, true );
+add_image_size( 'post-thumb', 300, 140, true );
+add_image_size( 'highlights-thumb', 140, 140, true );
+add_image_size( 'small-thumb', 100, 100, true );
 
 include_once(STYLESHEETPATH . '/inc/print/print.php');
 include_once(STYLESHEETPATH . '/inc/rhino-crisis/rhino-crisis.php');

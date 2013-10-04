@@ -13,7 +13,7 @@
 									<div class="thumb-highlights">
 										<?php 
 											if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it.
-												the_post_thumbnail(array(140,140));
+												the_post_thumbnail('highlights-thumb');
 											} 
 										?>
 									</div>
