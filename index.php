@@ -4,7 +4,7 @@
 
 <?php
 if(is_home() || is_front_page()) {
-	get_template_part('content', 'mapfeatured');
+	//get_template_part('content', 'mapfeatured');
 } 
 ?>
 
