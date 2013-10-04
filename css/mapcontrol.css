@@ -1,6 +1,7 @@
 /* = Map Containers
 -------------------------------------------------------------- */
-.home .map-container {
+.home .map-container,
+.single .map-container {
 	width: 100%;
 	height: 350px;
 	margin: 0;
