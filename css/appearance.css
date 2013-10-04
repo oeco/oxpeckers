@@ -17,10 +17,6 @@ body.logged-in {
 top: 28px;
 }
 
-.displaying-map #oxbody {
-top: 350px;
-}
-
 .logged-in #oxbody {
 margin-top: 28px;
 }
