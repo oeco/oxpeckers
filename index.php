@@ -18,16 +18,24 @@ if(is_home() || is_front_page()) {
 
 	<div class="main-content">
 
-	<div class="<?php if( is_front_page()) { echo "latestnews emboss"; } ?>">
-		<h2><?php _e('Latest articles', 'jeo'); ?></h2>
-		<?php get_template_part('loop'); ?>
-	</div>
+		<div class="<?php if( is_front_page()) { echo "latestnews emboss"; } ?>">
+			<h2><?php _e('Oxpeckers Investigations', 'jeo'); ?></h2>
+			<?php get_template_part('loop'); ?>
 
-	<aside id="sidebar">
-		<ul class="widgets">
-			<?php dynamic_sidebar('front_page'); ?>
-		</ul>
-	</aside>
+			<?php query_posts(array('cat' => 3)); ?>
+			<div class="more-stories">
+				<h3><?php _e('More stories', 'jeo'); ?></h3>
+				<?php get_template_part('loop'); ?>
+			</div>
+			<?php wp_reset_query(); ?>
+		</div>
+
+
+		<aside id="sidebar">
+			<ul class="widgets">
+				<?php dynamic_sidebar('front_page'); ?>
+			</ul>
+		</aside>
     
     </div>
 
