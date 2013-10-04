@@ -12,6 +12,8 @@ function oxpeckers_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'oxpeckers_scripts' );
 
+add_theme_support( 'post-thumbnails' );
+
 include_once(STYLESHEETPATH . '/inc/print/print.php');
 include_once(STYLESHEETPATH . '/inc/rhino-data/data.php');
 

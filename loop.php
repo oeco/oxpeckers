@@ -1,8 +1,10 @@
-<?php if(have_posts()) : ?>
+<?php $query = new WP_Query( 'cat=5' ); ?>
+
+<?php if( $query->have_posts()) : ?>
 	<!-- <section class="posts-section emboss">
 		<div class="container">-->
 			<ul class="posts-list">
-				<?php while(have_posts()) : the_post(); ?>
+				<?php while($query->have_posts()) : $query->the_post(); ?>
 <!--					<li id="post-<?php //the_ID(); ?>" <?php //post_class('three columns'); ?>>-->
 					<li id="post-<?php the_ID(); ?>" class="post-columns">
 						<article id="post-<?php the_ID(); ?>">
@@ -25,11 +27,11 @@
                                 
                             
 								<p class="credits">
-									<a href="<?php the_field('post_source_url'); ?>">Read on <?php the_field('post_source'); ?></a> | <?php echo get_the_date(); ?></span>
+									by <?php the_author(); ?> | <?php echo get_the_date(); ?></span>
 								</p>
 							</section>
 							<aside class="actions clearfix">
-								<?php echo jeo_find_post_on_map_button(); ?>
+								<?php //echo jeo_find_post_on_map_button(); ?>
 								<a href="<?php the_permalink(); ?>"><?php _e('Read more', 'jeo'); ?></a>
 							</aside>
 						</article>
@@ -38,4 +40,7 @@
 			</ul>
 		<!--</div>
 	</section>-->
+
+<?php wp_reset_postdata(); ?>
+
 <?php endif; ?>
