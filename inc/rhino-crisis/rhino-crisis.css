@@ -1,6 +1,6 @@
 .map .rhino-crisis {
-	background: #f00;
 	color: #fff;
+	background: #333;
 	-webkit-border-radius: 15px;
 	-khtml-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -13,6 +13,36 @@
 	margin-left: -15px;
 	text-align: center;
 	position:relative;
+}
+
+.map .rhino-crisis.rhino_deaths {
+	background: #B90000;
+}
+
+.map .rhino-crisis.rhino_deaths:before {
+	content: url(../../images/rhinoicon.png);
+	position: absolute;
+	width: 30px;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	opacity: .3;
+}
+
+.map .rhino-crisis.poaching_arrests {
+	background: #E0E000;
+}
+
+.map .rhino-crisis.poaching_arrests .marker-content {
+	color: #333;
+}
+
+.map .rhino-crisis .marker-content {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	font-weight: 800;
+	font-size: 11px;
 }
 
 .map .rhino-crisis:hover .bubble-container {
@@ -45,9 +75,10 @@
 	margin-bottom: 10px;
 	background: #333;
 	color: #f0f0f0;
-	padding: 5px;
+	padding: 8px 5px;
 	font-size: 12px;
 	line-height: 16px;
+	font-weight: 800;
 }
 
 .leaflet-marker-pane > * {

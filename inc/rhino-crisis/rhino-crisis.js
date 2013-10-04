@@ -143,7 +143,7 @@
 		}
 
 
-		return '<div class="rhino-crisis ' + marker_class + '">' + value + '<div class="bubble-container"><div class="bubble-content">' + layer_name + m.location + '</div></div></div>';
+		return '<div class="rhino-crisis ' + marker_class + '"><div class="marker-content">' + value + '</div><div class="bubble-container"><div class="bubble-content">' + layer_name + m.location + '</div></div></div>';
 
 	}
 
