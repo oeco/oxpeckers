@@ -1,22 +1,19 @@
 <div class="container">
-<?php query_posts(array('cat' => 2, 'posts_per_page' => 4)); ?>
-	<?php if(have_posts()) : the_post(); ?>
+<?php $highlights_query = new WP_Query(array('cat' => 2, 'posts_per_page' => 4)); ?>
+	<?php if($highlights_query->have_posts()) : ?>
 		<section id="highlight-content" class="highlight-content">
 			<h2>Highlights</h2>
 				<div class="highlights-content">
 					<ul class="highlights-list">
 						<?php $class = 'slider-item'; ?>
-						<?php $i = 0; while(have_posts()) : the_post(); ?>
-							<?php $active = $i >= 1 ? '' : ' active'; ?>
-							<li id="post-<?php the_ID(); ?>" <?php post_class($class . ' ' . $active); ?>>
+						<?php while($highlights_query->have_posts()) : $highlights_query->the_post(); ?>
+							<li <?php post_class($class); ?> data-sliderid="post-<?php the_ID(); ?>">
 								<article id="post-<?php the_ID(); ?>">
-									<div class="thumb-highlights">
-										<?php 
-											if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it.
-												the_post_thumbnail('highlights-thumb');
-											} 
-										?>
-									</div>
+									<?php if(has_post_thumbnail()) : ?>
+										<div class="thumb-highlights">
+											<?php the_post_thumbnail('highlights-thumb'); ?>
+										</div>
+									<?php endif; ?>
 									<div class="post-text">
 										<header class="post-header">
 											<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
@@ -35,20 +32,17 @@
 									</aside>
 								</article>
 							</li>
-						<?php $i++; endwhile; ?>
+						<?php endwhile; ?>
 					</ul>
 				</div>
 				<div class="slider-controllers">
 						<ul>
-							<?php $i = 0; while(have_posts()) : the_post(); $i++; ?>
-								<li class="slider-item-controller" data-postid="post-<?php the_ID(); ?>" title="<?php _e('Go to', 'jeo'); ?> <?php the_title(); ?>"><?php _e('Go to', 'jeo'); ?> <?php the_title(); ?></li>
+							<?php while($highlights_query->have_posts()) : $highlights_query->the_post(); ?>
+								<li class="slider-item-controller" data-sliderid="post-<?php the_ID(); ?>" title="<?php _e('Go to', 'jeo'); ?> <?php the_title(); ?>"><?php _e('Go to', 'jeo'); ?> <?php the_title(); ?></li>
 							<?php endwhile; ?>
 						</ul>
 				</div>
 		</section>
-		<script type="text/javascript">
-			//jeo.ui.featuredSlider('highlights-content');
-		</script>
 	<?php endif; ?>
 <?php wp_reset_query(); ?>
 </div>

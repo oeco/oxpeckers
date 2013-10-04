@@ -9,6 +9,10 @@
 	cursor: pointer;
 }
 
+.rhino-crisis-filter .layer-filter label {
+	cursor: pointer;
+}
+
 .rhino-crisis-filter .layer-filter:hover,
 .rhino-crisis-filter .layer-filter.active {
 	opacity: 1;
