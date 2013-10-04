@@ -1,3 +1,54 @@
+.rhino-crisis-filter .layer-filter {
+	display: block;
+	clear: both;
+	height: 25px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	text-align: left;
+	opacity: .6;
+	cursor: pointer;
+}
+
+.rhino-crisis-filter .layer-filter:hover,
+.rhino-crisis-filter .layer-filter.active {
+	opacity: 1;
+}
+
+
+.rhino-crisis-filter .layer-filter .icon {
+	width: 25px;
+	height: 25px;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	float: left;
+	margin-right: 10px;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.rhino-crisis-filter input[type=radio] {
+	display: none;
+}
+
+.rhino-crisis-filter .filter-count {
+	margin: 0 0 10px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #999;
+	text-align: left;
+	font-size: 16px;
+}
+
+.rhino-crisis-filter .filter-count .total {
+	font-weight: 800;
+	color: #f0f0f0;
+	font-size: 20px;
+}
+
 .map .rhino-crisis {
 	color: #fff;
 	background: #333;
@@ -15,11 +66,13 @@
 	position:relative;
 }
 
-.map .rhino-crisis.rhino_deaths {
+.map .rhino-crisis.rhino_deaths,
+.rhino-crisis-filter .layer-filter.rhino_deaths .icon {
 	background: #B90000;
 }
 
-.map .rhino-crisis.rhino_deaths:before {
+.map .rhino-crisis.rhino_deaths:before,
+.rhino-crisis-filter .layer-filter.rhino_deaths .icon:before {
 	content: url(../../images/rhinoicon.png);
 	position: absolute;
 	width: 30px;
@@ -27,9 +80,15 @@
 	top: 0;
 	left: 0;
 	opacity: .3;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
 }
 
-.map .rhino-crisis.poaching_arrests {
+.map .rhino-crisis.poaching_arrests,
+.rhino-crisis-filter .layer-filter.poaching_arrests .icon {
 	background: #E0E000;
 }
 

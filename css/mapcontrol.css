@@ -20,7 +20,7 @@
 }
 
 .leaflet-top.leaflet-right {
-	right: 180px;
+	right: 240px;
 }
 
 /*
@@ -51,7 +51,7 @@
 	background: rgba(0, 0, 0, 0.33) !important;
 	box-shadow: none !important;
 	bottom: 0;
-	right: 180px;
+	right: 240px;
 	margin: 0;
 	height: 16px !important;
 	-webkit-border-radius: 8px;
@@ -253,7 +253,7 @@ padding: 10px;
 font-size:12px;
 text-align:center;
 color:#FFF;
-width:140px;
+width: 200px;
 margin-top:10px;
 	-webkit-border-radius:8px;
 	-khtml-border-radius:8px;
@@ -316,19 +316,6 @@ text-shadow:0px 0px 4px rgba(255,255,255,0.4);
 font-size:12px;
 font-weight:300;
 color:#ccc;
-}
-
-#rhinolegend {
-padding: 10px;
-width:140px;
-margin-bottom:10px;
-	-webkit-border-radius:8px;
-	-khtml-border-radius:8px;
-	-moz-border-radius:8px;
-	-o-border-radius:8px;
-	border-radius:8px;
-background:rgba(0,0,0,0.8);
-overflow:hidden;
 }
 
 #rhinolegend h3.rhinoitem {

@@ -163,7 +163,7 @@
 		var f = {},
 			years,
 			yearSelect,
-			container = $('.map .rhino-death-filter'),
+			container = $('.map .rhino-crisis-filter'),
 			count;
 
 		f.init = function() {
@@ -178,8 +178,11 @@
 				} else if(key == 'poaching_arrests') {
 					layer_name = 'Poaching arrests';
 				}
-				layerSelect.append('<input type="radio" name="rhino-crisis-layer" id="layer_' + key + '" value="' + key + '" />');
-				layerSelect.append('<label for="layer_' + key + '">' + layer_name + '</label>');
+				var el = $('<div class="' + key + ' layer-filter" />');
+				el.append('<input type="radio" name="rhino-crisis-layer" id="layer_' + key + '" value="' + key + '" />');
+				el.append('<label for="layer_' + key + '"><span class="icon"></span> ' + layer_name + '</label>');
+
+				layerSelect.append(el);
 			}
 
 			layerSelect.find('input:first').attr('checked', 'checked');
@@ -229,9 +232,12 @@
 		function bindEvents() {
 
 			layerSelect.find('input').on('change', function() {
-				activateLayer(layerSelect.find(':checked').val());
+				var input = layerSelect.find(':checked');
+				activateLayer(input.val());
+				container.find('.layer-filter').removeClass('active');
+				input.parents('.layer-filter').addClass('active');
 				yearSelect.trigger('change');
-			});
+			}).trigger('change');
 
 			yearSelect.on('change', function() {
 				f.filter($(this).find(':selected').val());
