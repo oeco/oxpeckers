@@ -22,7 +22,7 @@ if(is_home() || is_front_page()) {
 			<h2><?php _e('Oxpeckers Investigations', 'jeo'); ?></h2>
 			<?php get_template_part('loop'); ?>
 
-			<?php query_posts(array('cat' => 3)); ?>
+			<?php query_posts(array('cat' => 3, 'posts_per_page' => 3)); ?>
 			<div class="more-stories">
 				<h3><?php _e('More stories', 'jeo'); ?></h3>
 				<?php get_template_part('loop', 'small'); ?>
