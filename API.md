@@ -18,10 +18,10 @@ Example:
 
 The form to submit a story is automatically opened on clicking elements with `.submit-story` class.
 
-All the fields that are not "title" and "content" are stored on the post as custom field. If you can't see it, go to "Screen options" on the top right corner and enable "Custom fields".
-
 Example:
 
 ```
 <a href="#" class="submit-story">Submit a story</a>
 ```
+
+All the fields from the published post, except for "title" and "content", are stored as custom field. If you can't see it while editing the contributed post, go to "Screen options" on the top right corner and enable "Custom fields".
