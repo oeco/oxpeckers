@@ -1,0 +1,200 @@
+/*
+ * Less functions
+ */
+.box-shadow(@arguments) {
+	-webkit-box-shadow: @arguments;
+	-khtml-box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-o-box-shadow: @arguments;
+	box-shadow: @arguments;
+}
+
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+	-khtml-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.transition(@arguments) {
+	-webkit-transition: @arguments;
+	-khtml-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.transform(@arguments) {
+	-webkit-transform: @arguments;
+	-khtml-transform: @arguments;
+	-moz-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
+}
+.box-sizing(@arguments) {
+	-webkit-box-sizing: @arguments;
+	-moz-box-sizing: @arguments;
+	box-sizing: @arguments;
+}
+.font-smoothing(@arguments) {
+	-webkit-font-smoothing: @arguments;
+}
+
+#submit-story {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .8);
+	z-index: 9999991;
+	display: none;
+	&.active {
+		display: block;
+	}
+	.submit-container {
+		width: 600px;
+		max-height: 90%;
+		overflow: auto;
+		padding: 20px;
+		.box-sizing(border-box);
+		.border-radius(5px);
+		top: 5%;
+		left: 50%;
+		margin-left: -300px;
+		position: absolute;
+		background: #f0f0f0;
+		.box-shadow(0 0 0px 10px rgba(0, 0, 0, .2));
+		p {
+			margin: 0 0 15px;
+		}
+		input,
+		textarea {
+			width: 100%;
+		}
+		&::-webkit-scrollbar {
+			background: #f0f0f0;
+			width: 15px;
+			.border-radius(5px);
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #666;
+			.border-radius(15px);
+			border: 5px #f0f0f0 solid;
+		}
+		.close-submit-story {
+			top: 20px;
+			right: 20px;
+			position: absolute;
+			color: #555;
+			background: #fff;
+			font-size: 20px;
+			line-height: 24px;
+			text-align: center;
+			width: 24px;
+			height: 24px;
+			display: block;
+			font-weight: 500;
+			font-family: 'OpenSansSemiboldRegular','Helvetica Neue',Helvetica,Verdana,Arial,sans-serif;
+			.border-radius(3px);
+		}
+		.error,
+		.required {
+			color: #f00;
+			font-weight: bold;
+		}
+	}
+}
+
+/*
+ * Geocode box
+ */
+
+#geocode-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 9999999;
+	display: none;
+	&.active {
+		display: block;
+	}
+	.geocode-box-container {
+		width: 500px;
+		position: absolute;
+		padding: 20px;
+		overflow: auto;
+		.border-radius(5px);
+		top: 15%;
+		left: 50%;
+		max-height: 60%;
+		margin-left: -260px;
+		background: #f0f0f0;
+		.box-shadow(0 0 0px 10px rgba(0,0,0,.2));
+		input#geocode_address {
+			width: 100%;
+		}
+		.results {
+			margin: 0 0 20px;
+			p {
+				font-size: 10px;
+				font-weight: bold;
+				margin: 0;
+			}
+			ul {
+				li {
+					background: #fff;
+					padding: 3px;
+					font-size: 11px;
+					margin-bottom: 1px;
+					cursor: pointer;
+					&:hover,
+					&.active {
+						background: #f0f0f0;
+					}
+				}
+			}
+		}
+		#geolocate_canvas {
+			width: 100%;
+			height: 280px;
+			margin-bottom: 20px;
+		}
+		&::-webkit-scrollbar {
+			background: #f0f0f0;
+			width: 15px;
+			.border-radius(5px);
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #666;
+			.border-radius(15px);
+			border: 5px #f0f0f0 solid;
+		}
+	}
+}
+
+#geocode-box {
+	h4 {
+		margin-bottom: 20px;
+	}
+	.close-geocode {
+		top: 20px;
+		right: 20px;
+		position: absolute;
+		color: #555;
+		background: #fff;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		width: 24px;
+		height: 24px;
+		display: block;
+		font-weight: 500;
+		font-family: 'OpenSansSemiboldRegular','Helvetica Neue',Helvetica,Verdana,Arial,sans-serif;
+		.border-radius(3px);
+	}
+}

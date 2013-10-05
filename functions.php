@@ -40,5 +40,7 @@ add_image_size( 'small-thumb', 100, 100, true );
 
 include_once(STYLESHEETPATH . '/inc/print/print.php');
 include_once(STYLESHEETPATH . '/inc/rhino-crisis/rhino-crisis.php');
+include_once(STYLESHEETPATH . '/inc/geocode-box.php');
+include_once(STYLESHEETPATH . '/inc/submit-story.php');
 
 ?>

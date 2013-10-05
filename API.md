@@ -13,3 +13,13 @@ Example:
 ```
 
 [Output example](http://oxpeckers.org/2013/09/2-rhinos-poached-on-provincial-reserve-in-north-west-provincial-reserve/?print=1)
+
+## Enabling contribution system
+
+Submit a story functionality is automatically opened on clicking elements with `.submit-story` class.
+
+Example:
+
+```
+<a href="#" class="submit-story">Submit a story</a>
+```
