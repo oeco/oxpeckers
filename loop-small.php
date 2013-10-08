@@ -16,7 +16,7 @@
 							
 							<section class="post-content">
 								<div class="post-excerpt">
-									<?php the_excerpt(); ?>
+									<?php the_content(); ?>
 								</div>
 							</section>
 							<aside class="actions clearfix">
