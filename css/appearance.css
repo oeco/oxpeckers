@@ -242,32 +242,6 @@ float:left;
 	float:left;
 }
 
-.posts-list.small li.post-columns {
-margin: 0 10px 20px 10px;
-background: none;
-float: left;
-width: 30%;
-text-align: center;
-}
-
-.posts-list.small li.post-columns .thumb-post {
-	background:rgba(0,0,0,0.6);
-	height:100px;
-	width:100px;
-	margin:0 31% 5px 30%;
-	float:left;
-	-webkit-border-radius: 50px;
-	-khtml-border-radius: 50px;
-	-moz-border-radius: 50px;
-	-o-border-radius: 50px;
-	border-radius: 50px;
-	overflow: hidden;
-}
-
-.posts-list.small li.post-columns .post-header, .posts-list.small li.post-columns .post-content, .posts-list.small li.post-columns aside.actions {
-	float:left;
-}
-
 
 #sidebar { float:right; width:26%; margin:20px 0 0 0 !important; }
 
@@ -347,13 +321,13 @@ margin: 0 auto 30px;
 }
 
 .ancir {
-	background: url('../images/brands/ANCIR.png') no-repeat center left;
+	background: url('../images/brands/ANCIR.png') no-repeat center center;
 }
 
 .anic {
-	background: url('../images/brands/anic.png') no-repeat center left;
+	background: url('../images/brands/anic.png') no-repeat center center;
 	float:right;
-	width: 240px;
+	width: 210px;
 }
 
 

@@ -254,7 +254,6 @@ box-shadow:none !important;
 padding: 0px !important;
 background:none !important;
 border:none !important;
-margin: 0 10px 0 0;
 }
 
 #rhinocount, #sharethis, #rhinolegend {
@@ -327,7 +326,7 @@ width:140px;
 text-shadow:0px 0px 4px rgba(0,0,0,0.4);
 }
 
-.rhino_deaths {
+#rhinocount h3.count {
 padding: 0;
 font-size:26px;
 line-height: 28px;
@@ -346,12 +345,11 @@ text-shadow:0px 0px 4px rgba(255,255,255,0.4);
 
 .map-legend h3 {
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 20px;
 	margin: 0 0 10px;
 	color: #fff;
 	text-align: left;
-	text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
 }
 
 #rhinocount h3.count span {
@@ -361,17 +359,14 @@ color:#ccc;
 }
 
 #rhinolegend .rhinoitem {
-padding: 0 0 0 40px;
-line-height: 28px;
-font-size: 12px;
-text-align: left;
-color: #FFF;
-margin: 0 0 0 5px;
-background-repeat: no-repeat;
-background-position: 8px 5px;
-font-family: "Share Bold";
-text-shadow: 0px 0px 3px rgba(0,0,0,0.8);
-letter-spacing: 0.5px;
+	padding: 0 0 0 40px;
+	line-height: 28px;
+	font-size: 12px;
+	text-align:left;
+	color:#FFF;
+	margin:0;
+	background-repeat: no-repeat;
+	background-position: 7px 5px;
 }
 
 #prisons {
@@ -384,22 +379,6 @@ background-image: url('../images/marker-rhino-deaths.png');
 
 #related {
 background-image: url('../images/marker-poucher-deaths.png');
-}
-
-.rhino-crisis-filter .layer-filter {
-display: block;
-clear: none;
-height: 35px;
-line-height: 12px;
-text-align: left;
-opacity: .6;
-cursor: pointer;
-width: 80px;
-margin: 0 5px 10px;
-float: left;
-padding: 5px;
-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.6);
-border-radius: 8px;
 }
 
 

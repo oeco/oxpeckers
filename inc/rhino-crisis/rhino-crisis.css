@@ -11,14 +11,6 @@
 
 .rhino-crisis-filter .layer-filter label {
 	cursor: pointer;
-	display: block;
-	font-size: 10px;
-	line-height: 16px;
-	font-family: "Share Regular";
-	text-shadow: 0px 0px 3px rgba(255,255,255,0.6);
-	float: left;
-	text-align: center;
-	letter-spacing: -1px;
 }
 
 .rhino-crisis-filter .layer-filter:hover,
@@ -28,16 +20,16 @@
 
 
 .rhino-crisis-filter .layer-filter .icon {
-	width: 40px;
+	width: 25px;
 	height: 25px;
-	/*-webkit-border-radius: 15px;
+	-webkit-border-radius: 15px;
 	-khtml-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-o-border-radius: 15px;
-	border-radius: 15px;*/
+	border-radius: 15px;
 	float: left;
-	margin: 0 20px;
-	/*background: #fff;*/
+	margin-right: 10px;
+	background: #fff;
 	position: relative;
 	overflow: hidden;
 }
@@ -51,26 +43,21 @@
 }
 
 .rhino-crisis-filter .filter-count {
-margin: 5px 0 20px 10px;
-line-height: 20px;
-text-transform: uppercase;
-color: #999;
-text-align: left;
-font-size: 10px;
-width: 90px;
-float: left;
-font-family: Share Regular;
+	margin: 0 0 10px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #999;
+	text-align: left;
+	font-size: 12px;
 }
 
 .rhino-crisis-filter .filter-count .total {
-font-weight: 800;
-color: #fff;
-font-size: 25px;
-display: block;
-float: right;
-margin-left: 10px;
-font-family: "Share Bold";
-text-shadow: 0px 0px 5px rgba(255,255,255,0.6);
+	font-weight: 800;
+	color: #f0f0f0;
+	font-size: 18px;
+	display: block;
+	float: right;
+	margin-left: 10px;
 }
 
 .map .rhino-crisis {
@@ -90,108 +77,34 @@ text-shadow: 0px 0px 5px rgba(255,255,255,0.6);
 	position:relative;
 }
 
-.map .rhino-crisis.rhino_deaths/*,
-.rhino-crisis-filter .layer-filter.rhino_deaths .icon*/ {
+.map .rhino-crisis.rhino_deaths,
+.rhino-crisis-filter .layer-filter.rhino_deaths .icon {
 	background: #B90000;
 }
 
-.rhino_deaths.layer-filter.active {
-	background-color:rgba(162,0,0,0.6);
-}
-
-.poaching_arrests.layer-filter.active {
-background-color: rgba(243, 164, 25, 0.6);
-}
-
-.rhino_deaths.layer-filter:hover {
-	background-color:rgba(162,0,0,0.3);
-}
-
-.poaching_arrests.layer-filter:hover {
-background-color: rgba(243, 164, 25, 0.3);
-}
-
-
-.map .rhino-crisis.rhino_deaths:before/*,
-.rhino-crisis-filter .layer-filter.rhino_deaths .icon:before*/ {
-	content: url(../../images/rhinoicon.png);
-	position: absolute;
-	width: 30px;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	opacity: .3;
-	-webkit-border-radius: 15px;
-	-khtml-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-o-border-radius: 15px;
-	border-radius: 15px;
-	font-family: "Share Bold"
-}
-
-.map .rhino-crisis.poaching_arrests:before/*,
-.rhino-crisis-filter .layer-filter.rhino_deaths .icon:before*/ {
-	content: url(../../images/arrestsicon.png);
-	position: absolute;
-	width: 30px;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	opacity: .3;
-	-webkit-border-radius: 15px;
-	-khtml-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-o-border-radius: 15px;
-	border-radius: 15px;
-	font-family: "Share Bold"
-}
-
+.map .rhino-crisis.rhino_deaths:before,
 .rhino-crisis-filter .layer-filter.rhino_deaths .icon:before {
 	content: url(../../images/rhinoicon.png);
 	position: absolute;
-	width: 40px;
+	width: 30px;
 	overflow: hidden;
 	top: 0;
 	left: 0;
+	opacity: .3;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
 }
 
-.rhino-crisis-filter .layer-filter.poaching_arrests .icon:before {
-	content: url(../../images/arrestsicon.png);
-	position: absolute;
-	width: 40px;
-	overflow: hidden;
-	top: 0;
-	left: 0;
+.map .rhino-crisis.poaching_arrests,
+.rhino-crisis-filter .layer-filter.poaching_arrests .icon {
+	background: #E0E000;
 }
-
-.rhino-crisis-filter select {
-margin: 0 0 20px 5px;
-padding: 0 10px;
-width: 90px;
-height: 25px;
-border: none;
-border-radius: 6px;
-webkit-border-radius: 6px;
-font-family: "Share Bold";
-appearance: none;
--appearance: none;
--moz-appearance: none;
--webkit-appearance: none;
-text-align: center;
-color: #FFF;
-background: url(../../images/arrowdown.png) no-repeat center right rgba(0,0,0,0.5);
-float: left;
-}
-
-.map .rhino-crisis.poaching_arrests/*,
-.rhino-crisis-filter .layer-filter.poaching_arrests .icon*/ {
-	background: #E0AA00;
-}
-
-
 
 .map .rhino-crisis.poaching_arrests .marker-content {
-	color: #FFF;
+	color: #333;
 }
 
 .map .rhino-crisis .marker-content {
@@ -199,9 +112,7 @@ float: left;
 	z-index: 2;
 	color: #fff;
 	font-weight: 800;
-	font-size: 14px;
-	font-family: Share Bold;
-	text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
+	font-size: 11px;
 }
 
 .map .rhino-crisis:hover .bubble-container {
