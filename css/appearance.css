@@ -220,7 +220,6 @@ margin: 20px 0 !important;
 float: left !important;
 text-align: left;
 padding: 30px;
-width:68% !important;
 }
 
 .latestnews {
@@ -231,7 +230,6 @@ padding: 30px 0px 30px 35px !important;
 li.post-columns {
 margin: 0 40px 20px 0;
 background:none;
-float:left;
 }
 
 .thumb-post {
@@ -371,4 +369,22 @@ top: 40px;
 -moz-border-radius: 20px;
 -o-border-radius: 20px;
 border-radius: 20px;
+}
+
+/*
+ * RESPONSIVE
+ */
+
+@media only screen and (max-width: 1191px) {
+	#sidebar {
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.latestnews,
+	#sidebar {
+		width: auto !important;
+		float: none !important;
+	}
 }

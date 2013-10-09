@@ -8,6 +8,7 @@ function oxpeckers_scripts() {
 	wp_enqueue_style( 'appearance', get_stylesheet_directory_uri() . '/css/appearance.css' );
 
 	wp_enqueue_script('carousel', get_stylesheet_directory_uri() . '/js/carousel.js', array('jquery'));
+	wp_enqueue_script('frontend', get_stylesheet_directory_uri() . '/js/frontend.js', array('jquery'));
 }
 
 add_action('wp_enqueue_scripts', 'oxpeckers_scripts', 100);
