@@ -125,45 +125,48 @@ padding: 20px;
 
 /* =Header
 -------------------------------------------------------------- */
-#oxmasthead {
-width:100% !important;
-height:120px !important;
-margin:0 !important;
-padding: 0;
-text-align:center;
-background:url('../images/header-limit.png') repeat-x top center;
-}
 
 .oxheader {
-height:120px !important;
-margin:0 20px !important;
-padding: 0;
-background:url('../images/red-bar.png') repeat-x top center;
+	margin: 0 20px;
+}
+
+.displaying-map .oxheader .oxpecker-ilus {
+	margin-top: -60px;
+	width: auto;
+	height: auto;
+}
+
+
+.oxheader .oxpecker-ilus {
+	float: left;
+	position: relative;
+	z-index: 1000;
+	border-radius: 120px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	height: 123px;
+	width: auto;
 }
 
 .oxheader h1 {
-width:320px;
-height:120px;
-margin:0;
-padding: 0;
-float:left;
-background:url('../images/oxpeckers-brandbar.jpg') left top;
+	float: left;
+	line-height: 0;
+	margin: 50px 40px;
 }
 
 .oxheader h1 a {
 text-indent:-999999px;
 display:block;
-height:100px;
-margin:auto 0;
+}
+
+.oxheader h1 img {
+	display: block;
+	width: 300px;
+	height: auto;
 }
 
 #oxmasthead #oxmasthead-nav {
-width:320px;
-height:120px;
-margin:0;
-padding: 0;
-float:right;
-background:url('../images/header-end.png') right top;
+	float:right;
 }
 
 #oxmasthead #oxmasthead-nav #searchform {
@@ -201,17 +204,12 @@ background:url('../images/header-end.png') right top;
 	width:140px;
 	margin:0 20px 0 10px;
 	float:left;
-	-webkit-border-radius: 70px;
-	-khtml-border-radius: 70px;
-	-moz-border-radius: 70px;
-	-o-border-radius: 70px;
-	border-radius: 70px;
+-webkit-border-radius: 70px;
+-khtml-border-radius: 70px;
+-moz-border-radius: 70px;
+-o-border-radius: 70px;
+border-radius: 70px;
 	overflow:hidden;
-}
-
-.text-staff {
-	float:left;
-	min-height: 140px;
 }
 
 .highlights-content .highlights-list aside.action {
@@ -229,13 +227,8 @@ padding: 30px;
 /*width:68% !important;*/
 }
 
-.latestnews {
-padding: 30px 0px 30px 35px !important;
-}
-
-
 li.post-columns {
-margin: 0 40px 20px 0;
+margin: 0 0 20px 0;
 background:none;
 float:left;
 }
@@ -323,19 +316,13 @@ margin:0 20px 100px 20px;
 	text-indent:-99999px;
 }
 
-.scptitle {
-	text-align: left;
-	border-bottom: 1px dotted #BBB;
-	padding: 3px 0;
-}
-
 .partners {
 height: 160px;
 width: 700px;
 margin: 0 auto 30px;
 }
 
-.ami, .chinaafrica, .ecolab, .fair, .hacks, .ancir, .anic {
+.ami, .chinaafrica, .fair, .hacks, .ancir, .anic {
 	text-indent:-99999px;
 	width: 160px;
 	height: 160px;
@@ -348,10 +335,6 @@ margin: 0 auto 30px;
 
 .chinaafrica {
 	background: url('../images/brands/China_AfricaReportingProject.png') no-repeat center center;
-}
-
-.ecolab {
-	background: url('../images/brands/ecolab.png') no-repeat center center;
 }
 
 .fair {
