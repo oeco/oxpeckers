@@ -28,9 +28,11 @@
         <div class="oxheader">
 			<!--<div class="four columns">
 				<div class="site-meta">-->
+					<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>"><img class="oxpecker-ilus" src="<?php echo get_stylesheet_directory_uri(); ?>/images/oxpecker.png" alt="<?php bloginfo('name'); ?>" /></a>
 					<h1>
 						<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
 							<?php bloginfo('name'); ?>
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" />
 						</a>
 					</h1>
 					<!--<h2><?php //bloginfo('description'); ?></h2>

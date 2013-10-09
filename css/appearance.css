@@ -124,45 +124,42 @@ padding: 20px;
 
 /* =Header
 -------------------------------------------------------------- */
-#oxmasthead {
-width:100% !important;
-height:120px !important;
-margin:0 !important;
-padding: 0;
-text-align:center;
-background:url('../images/header-limit.png') repeat-x top center;
-}
 
 .oxheader {
-height:120px !important;
-margin:0 20px !important;
-padding: 0;
-background:url('../images/red-bar.png') repeat-x top center;
+	margin: 0 20px 0 100px;
+	height: 300px;
+}
+
+
+.oxheader .oxpecker-ilus {
+	float: left;
+	margin-top: -80px;
+	position: relative;
+	z-index: 1000;
+	border-radius: 120px;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
 .oxheader h1 {
-width:320px;
-height:120px;
-margin:0;
-padding: 0;
-float:left;
-background:url('../images/oxpeckers-brandbar.jpg') left top;
+	float: left;
+	line-height: 0;
+	margin: 40px;
 }
 
 .oxheader h1 a {
 text-indent:-999999px;
 display:block;
-height:100px;
-margin:auto 0;
+}
+
+.oxheader h1 img {
+	display: block;
+	width: 300px;
+	height: auto;
 }
 
 #oxmasthead #oxmasthead-nav {
-width:320px;
-height:120px;
-margin:0;
-padding: 0;
-float:right;
-background:url('../images/header-end.png') right top;
+	float:right;
 }
 
 #oxmasthead #oxmasthead-nav #searchform {
