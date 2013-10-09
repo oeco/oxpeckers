@@ -41,8 +41,6 @@ if(is_home() || is_front_page()) {
 
 </div>
 
-<div class="clearfloat">Clearfloat</div>
-
 <div class="partners">
     <div class="ami">AMI</div>
     <div class="chinaafrica">China Africa Reporting Project</div>
