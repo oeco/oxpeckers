@@ -6,7 +6,7 @@
 
 		function fixWidth() {
 			$('.latestnews, .single-post .content').css({
-				width: $('.main-content').width() - $('#sidebar').width() - 35 - 20
+				width: $('.main-content').width() - $('#sidebar').width() - 60 - 20
 			});
 		}
 
