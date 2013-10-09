@@ -125,44 +125,45 @@ padding: 20px;
 
 /* =Header
 -------------------------------------------------------------- */
+#oxmasthead {
+width:100% !important;
+height:120px !important;
+margin:0 !important;
+padding: 0;
+text-align:center;
+background:url('../images/header-limit.png') repeat-x top center;
+}
 
 .oxheader {
-	margin: 0 20px;
-	height: 300px;
-}
-
-.displaying-map .oxheader .oxpecker-ilus {
-	margin-top: -60px;
-}
-
-
-.oxheader .oxpecker-ilus {
-	float: left;
-	position: relative;
-	z-index: 1000;
-	border-radius: 120px;
-	margin-bottom: 20px;
+height:120px !important;
+margin:0 20px !important;
+padding: 0;
+background:url('../images/red-bar.png') repeat-x top center;
 }
 
 .oxheader h1 {
-	float: left;
-	line-height: 0;
-	margin: 40px;
+width:320px;
+height:120px;
+margin:0;
+padding: 0;
+float:left;
+background:url('../images/oxpeckers-brandbar.jpg') left top;
 }
 
 .oxheader h1 a {
 text-indent:-999999px;
 display:block;
-}
-
-.oxheader h1 img {
-	display: block;
-	width: 300px;
-	height: auto;
+height:100px;
+margin:auto 0;
 }
 
 #oxmasthead #oxmasthead-nav {
-	float:right;
+width:320px;
+height:120px;
+margin:0;
+padding: 0;
+float:right;
+background:url('../images/header-end.png') right top;
 }
 
 #oxmasthead #oxmasthead-nav #searchform {
@@ -200,12 +201,17 @@ display:block;
 	width:140px;
 	margin:0 20px 0 10px;
 	float:left;
--webkit-border-radius: 70px;
--khtml-border-radius: 70px;
--moz-border-radius: 70px;
--o-border-radius: 70px;
-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	-khtml-border-radius: 70px;
+	-moz-border-radius: 70px;
+	-o-border-radius: 70px;
+	border-radius: 70px;
 	overflow:hidden;
+}
+
+.text-staff {
+	float:left;
+	min-height: 140px;
 }
 
 .highlights-content .highlights-list aside.action {
@@ -317,13 +323,19 @@ margin:0 20px 100px 20px;
 	text-indent:-99999px;
 }
 
+.scptitle {
+	text-align: left;
+	border-bottom: 1px dotted #BBB;
+	padding: 3px 0;
+}
+
 .partners {
 height: 160px;
 width: 700px;
 margin: 0 auto 30px;
 }
 
-.ami, .chinaafrica, .fair, .hacks, .ancir, .anic {
+.ami, .chinaafrica, .ecolab, .fair, .hacks, .ancir, .anic {
 	text-indent:-99999px;
 	width: 160px;
 	height: 160px;
@@ -336,6 +348,10 @@ margin: 0 auto 30px;
 
 .chinaafrica {
 	background: url('../images/brands/China_AfricaReportingProject.png') no-repeat center center;
+}
+
+.ecolab {
+	background: url('../images/brands/ecolab.png') no-repeat center center;
 }
 
 .fair {

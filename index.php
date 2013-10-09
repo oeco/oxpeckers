@@ -44,6 +44,7 @@ if(is_home() || is_front_page()) {
 <div class="partners">
     <div class="ami">AMI</div>
     <div class="chinaafrica">China Africa Reporting Project</div>
+    <div class="ecolab">Ecolab</div>
     <div class="fair">Fair</div>
     <div class="hacks">HacksHackers Africa</div>
 </div>
