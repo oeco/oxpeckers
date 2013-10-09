@@ -131,10 +131,13 @@ padding: 20px;
 	height: 300px;
 }
 
+.displaying-map .oxheader .oxpecker-ilus {
+	margin-top: -80px;
+}
+
 
 .oxheader .oxpecker-ilus {
 	float: left;
-	margin-top: -80px;
 	position: relative;
 	z-index: 1000;
 	border-radius: 120px;
