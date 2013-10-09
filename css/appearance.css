@@ -127,12 +127,12 @@ padding: 20px;
 -------------------------------------------------------------- */
 
 .oxheader {
-	margin: 0 20px 0 100px;
+	margin: 0 20px;
 	height: 300px;
 }
 
 .displaying-map .oxheader .oxpecker-ilus {
-	margin-top: -80px;
+	margin-top: -60px;
 }
 
 
@@ -141,7 +141,6 @@ padding: 20px;
 	position: relative;
 	z-index: 1000;
 	border-radius: 120px;
-	padding: 20px;
 	margin-bottom: 20px;
 }
 
