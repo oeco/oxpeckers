@@ -194,6 +194,11 @@ a.associated:hover {
 	overflow:hidden;
 }
 
+.text-staff {
+	min-height:140px;
+	float:left;
+}
+
 .highlights-content .highlights-list aside.action {
 	float:right;
 	width:300px;
