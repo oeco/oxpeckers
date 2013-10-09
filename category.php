@@ -18,16 +18,9 @@ if(is_home() || is_front_page()) {
 
 	<div class="main-content">
 
-		<div class="content-container <?php if( is_front_page()) { echo "latestnews emboss"; } ?>">
-			<h2><?php _e('Oxpeckers Investigations', 'jeo'); ?></h2>
+		<div class="content-container emboss">
+			<h2><?php single_cat_title(); ?></h2>
 			<?php get_template_part('loop'); ?>
-
-			<!--<?php //query_posts(array('category_name' => 'reports', 'posts_per_page' => 3)); ?>
-			<div class="more-stories">
-				<h3><?php //_e('More stories', 'jeo'); ?></h3>
-				<?php //get_template_part('loop', 'small'); ?>
-			</div>
-			<?php wp_reset_query(); ?>-->
 		</div>
 
 

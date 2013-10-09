@@ -204,7 +204,7 @@ a.associated:hover {
 	width:300px;
 }
 
-.single-post .content, .latestnews {
+.single-post .content, .latestnews, .content-container {
 	margin: 20px 0 !important;
 	float: left !important;
 	text-align: left;
