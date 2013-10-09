@@ -24,7 +24,7 @@ class Oxpeckers_RhinoData {
 	function scripts() {
 
 		wp_enqueue_style('oxpeckers-rhino-crisis', get_stylesheet_directory_uri() . '/inc/rhino-crisis/rhino-crisis.css');
-		wp_enqueue_script('oxpeckers-rhino-crisis', get_stylesheet_directory_uri() . '/inc/rhino-crisis/rhino-crisis.js', array('jeo', 'underscore'), '0.0.0');
+		wp_enqueue_script('oxpeckers-rhino-crisis', get_stylesheet_directory_uri() . '/inc/rhino-crisis/rhino-crisis.js', array('jeo', 'underscore'), '0.1.0');
 		wp_localize_script('oxpeckers-rhino-crisis', 'rhino', array(
 			'data' => $this->get_data()
 		));

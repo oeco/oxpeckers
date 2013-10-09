@@ -26,7 +26,7 @@
 				if(m.latitude && m.longitude) {
 
 					var marker = L.marker([m.latitude, m.longitude], {
-						zIndexOffset: -5,
+						zIndexOffset: -100,
 						riseOnHover: true,
 						riseOffset: 9997,
 						clickable: false,
