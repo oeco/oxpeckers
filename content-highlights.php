@@ -27,8 +27,16 @@
 									</div>
 									<aside class="actions">
 										<a href="<?php the_permalink(); ?>" class="associated"><?php _e('Read more', 'jeo'); ?></a>
-										<a href="<?php the_field('get_the_data'); ?>" class="associated"><?php _e('Download the Data', 'jeo'); ?></a>
-										<a href="<?php the_field('related_document'); ?>" class="associated"><?php _e('Related Document', 'jeo'); ?></a>
+											<?php
+											$data = get_field('get_the_data');
+											$document = get_field('related_document');
+											?>
+											<?php if($data) : ?>
+												<a href="<?php echo $data; ?>" class="associated"><?php _e('Download the Data', 'jeo'); ?></a>
+											<?php endif; ?>
+											<?php if($document) : ?>
+												<a href="<?php echo $document; ?>" class="associated"><?php _e('Related Document', 'jeo'); ?></a>
+											<?php endif; ?>
 									</aside>
 								</article>
 							</li>
