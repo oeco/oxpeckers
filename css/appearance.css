@@ -184,7 +184,7 @@ a.associated:hover {
 	background:rgba(0,0,0,0.6);
 	height:140px;
 	width:140px;
-	margin:0 20px 0 10px;
+	margin:0 20px 10px 10px;
 	float:left;
 	-webkit-border-radius: 70px;
 	-khtml-border-radius: 70px;
@@ -196,7 +196,7 @@ a.associated:hover {
 
 .text-staff {
 	min-height:140px;
-	float:left;
+	margin-bottom: 10px;
 }
 
 .highlights-content .highlights-list aside.action {
@@ -353,6 +353,18 @@ li.post-columns {
 	margin:0 20px 20px 0;
 	float:right;
 	text-align:left;
+}
+
+ul#menu-footer_menu li {
+float: left;
+border-left: 1px solid #521010;
+padding: 0 10px;
+display: inline;
+}
+
+ul#menu-footer_menu li:first-child {
+border-left: none;
+padding: 0 10px 0 0;
 }
 
 #jeo-share-widget {
