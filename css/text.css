@@ -97,7 +97,7 @@ h2.widget-title {
 }
 
 .post-excerpt  {
-	height:115px;
+	height:80px;
 	overflow:hidden;
 	margin:0;
 }
@@ -206,8 +206,13 @@ margin-right: 10px;
 	padding:0 0 0 20px;
 	font-style: italic;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 14px;
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.content blockquote p {
+	font-size: 15px;
+	line-height: 25px;
 }
 
 
