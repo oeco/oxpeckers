@@ -145,7 +145,7 @@
 
 		var html = markerHtml(value, m);
 
-		m.rhinoIcon = new L.HtmlIcon({
+		m.rhinoIcon = new L.divIcon({
 			html: html
 		});
 
@@ -286,39 +286,3 @@
 	}
 
 })(jQuery);
-
-/**
- * Plugin for adding arbitrary HTML markers to a Leaflet map
- * https://github.com/dwnoble/LeafletHtmlIcon
- * 
- * Public domain
- * 
- */
-
-if(typeof L.HtmlIcon === 'undefined'){
-
-	L.HtmlIcon = L.Icon.extend({
-		options: {
-			/*
-			html: (String) (required)
-			iconAnchor: (Point)
-			popupAnchor: (Point)
-			*/
-		},
-
-		initialize: function (options) {
-			L.Util.setOptions(this, options);
-		},
-
-		createIcon: function () {
-			var div = document.createElement('div');
-			div.innerHTML = this.options.html;
-			return div;
-		},
-
-		createShadow: function () {
-			return null;
-		}
-	});
-
-}

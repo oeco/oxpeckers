@@ -38,6 +38,11 @@
 	z-index: 9999;
 }
 
+.leaflet-div-icon {
+	background: transparent;
+	border: 0;
+}
+
 /*
 
 .map-container .map .leaflet-control-container .leaflet-top {
