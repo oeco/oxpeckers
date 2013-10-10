@@ -11,7 +11,7 @@
 					<?php
 					$print_url = oxpeckers_get_print_url();
 					if($print_url) : ?>
-						<span class="lsf">&#xE10a;</span> <a class="print" href="<?php echo $print_url; ?>"><?php _e('Print this map', 'oxpeckers'); ?></a>
+						| <span class="lsf">&#xE10a;</span> <a class="print" href="<?php echo $print_url; ?>"><?php _e('Print this map', 'oxpeckers'); ?></a>
 					<?php endif; ?></p>
 					<?php the_category(); ?>
 				</div>
