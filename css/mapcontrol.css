@@ -491,5 +491,6 @@ background: rgba(0,0,0,0.8);
 .leaflet-control-container .leaflet-top .map-tooltip {
 	height: 65px;
 	width:230px;
-	font-family: "Share Bold"
+	font-family: "Share Bold";
+	overflow: hidden;
 }
