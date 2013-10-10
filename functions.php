@@ -69,6 +69,7 @@ function oxpeckers_related_posts_content($content) {
 			wp_reset_postdata();
 
 		}
+		$output .= '</ul>';
 	}
 
 	$content = $content . $output;
