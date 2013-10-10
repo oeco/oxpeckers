@@ -18,9 +18,12 @@
 </footer>
 
 	<div class="footer-menu">
-			<nav id="footer-nav">
-				<?php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>
-			</nav>
+
+	<div class="clearfix">
+		<nav id="footer-nav">
+			<?php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>
+		</nav>
+	</div>
 
 
 	<div class="clearfix">
