@@ -87,4 +87,9 @@ function oxpeckers_markerclusterer_options($options) {
 }
 add_filter('jeo_markerclusterer_options', 'oxpeckers_markerclusterer_options');
 
+
+function oxpeckers_disable_share_map_menu() {
+	return true;
+}
+add_filter('jeo_disable_share_map_menu', 'oxpeckers_disable_share_map_menu');
 ?>
