@@ -61,6 +61,7 @@ if(is_home() || is_front_page()) {
 					vertical-align: middle;
 					margin-bottom: 20px;
 					width: 1%;
+					padding: 20px;
 				}
 				.investigations-cats ul li img {
 					border-radius: 75px;
