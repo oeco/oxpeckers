@@ -19,15 +19,13 @@ if(is_home() || is_front_page()) {
 	<div class="main-content">
 
 		<div class="content-container <?php if( is_front_page()) { echo "latestnews emboss"; } ?>">
-			<h2><?php _e('Oxpeckers Investigations', 'jeo'); ?></h2>
-			<?php get_template_part('loop'); ?>
 
 			<?php
 			$investigation_cat = get_category_by_slug('investigations');
 			$investigations = get_categories(array('child_of' => $investigation_cat->term_id, 'hide_empty' => false));
 			if($investigations) :
 				?>
-				<div class="investigations-cats">
+				<div class="investigations-cats clearfix">
 					<ul>
 						<?php
 						foreach($investigations as $investigation) : 
@@ -41,6 +39,7 @@ if(is_home() || is_front_page()) {
 									<?php endif; ?>
 									<h3><a href="<?php echo get_term_link($investigation); ?>" title="<?php echo $investigation->name; ?>"><?php echo $investigation->name; ?></a></h3>
 									<p><?php echo $investigation->description; ?></p>
+									<p><a href="<?php echo get_term_link($investigation); ?>"><?php _e('Read more', 'oxpeckers'); ?></a></p>
 								</li>
 							<?php
 						endforeach;
@@ -52,22 +51,28 @@ if(is_home() || is_front_page()) {
 			?>
 			<style>
 				.investigations-cats ul {
-					display: table;
 					width: 100%;
 				}
 				.investigations-cats ul li {
 					text-align: center;
-					display: table-cell;
-					vertical-align: middle;
 					margin-bottom: 20px;
-					width: 1%;
-					padding: 20px;
+					width: 50%;
+					height: 370px;
+					float: left;
+					padding: 0 20px;
+					box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					-khtml-box-sizing: border-box;
 				}
 				.investigations-cats ul li img {
 					border-radius: 75px;
 					margin-bottom: 20px;
 				}
 			</style>
+
+			<h2><?php _e('Oxpeckers Investigations', 'jeo'); ?></h2>
+			<?php get_template_part('loop'); ?>
 
 			<!--<?php //query_posts(array('category_name' => 'reports', 'posts_per_page' => 3)); ?>
 			<div class="more-stories">
