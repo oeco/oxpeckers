@@ -56,6 +56,26 @@ h1,h2,h3,h4,h5,h6{
 	color: #600 !important;
 }
 
+.map-header_menu {
+float: right;
+font-family: "Share Bold";
+font-size: 18px;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+margin: 10px 0;
+}
+
+.map-header_menu li {
+float: right;
+padding: 0 20px;
+border-right:1px solid #521010;
+}
+
+.map-header_menu li:first-child {
+float: right;
+padding: 0 0 0 20px;
+border-right:none;
+}
+
 
 .content-container .post-header h3 {
 	font-size: 16px;
