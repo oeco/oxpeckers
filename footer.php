@@ -23,15 +23,17 @@
 			</nav>
 
 
-	<div class="footer-brands">
-		<h4><?php _e('Project by', 'oxpeckers'); ?></h4>
-		<div class="ancir">ANCIR</div>
-		<div class="anic">ANIC</div>
-	</div>
+	<div class="clearfix">
+		<div class="footer-brands">
+			<h4><?php _e('Project by', 'oxpeckers'); ?></h4>
+			<div class="ancir">ANCIR</div>
+			<div class="anic">ANIC</div>
+		</div>
 
 
-	<div class="credits">
-				<p class="credits"><?php printf(__('This website is built on <a href="%s" target="_blank" rel="external">WordPress</a> using the <a href="%s" target="_blank" rel="external">JEO Beta</a> theme', 'jeo'), 'http://wordpress.org', 'http://jeo.cardume.art.br/'); ?></p>
+		<div class="credits">
+					<p class="credits"><?php printf(__('This website is built on <a href="%s" target="_blank" rel="external">WordPress</a> using the <a href="%s" target="_blank" rel="external">JEO Beta</a> theme', 'jeo'), 'http://wordpress.org', 'http://jeo.cardume.art.br/'); ?></p>
+		</div>
 	</div>
 	
 	</div>
