@@ -20,6 +20,8 @@ if(is_home() || is_front_page()) {
 
 		<div class="content-container <?php if( is_front_page()) { echo "latestnews emboss"; } ?>">
 
+			<h2><?php _e('Oxpeckers Investigations', 'jeo'); ?></h2>
+
 			<?php
 			$investigation_cat = get_category_by_slug('investigations');
 			$investigations = get_categories(array('child_of' => $investigation_cat->term_id, 'hide_empty' => false));
@@ -70,8 +72,6 @@ if(is_home() || is_front_page()) {
 					margin-bottom: 20px;
 				}
 			</style>
-
-			<h2><?php _e('Oxpeckers Investigations', 'jeo'); ?></h2>
 			<?php get_template_part('loop'); ?>
 
 			<!--<?php //query_posts(array('category_name' => 'reports', 'posts_per_page' => 3)); ?>
