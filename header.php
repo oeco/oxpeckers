@@ -45,9 +45,10 @@
 							<?php get_search_form(); ?>
 						</div>
 						<!--<a href="https://twitter.com/OxCIEJ" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @OxCIEJ</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->						<nav id="main-nav">
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
+						<nav id="main-nav">
 						<div id="twitter_div">
-							<a href="http://twitter.com/@OxCIEJ" id="twitter-link" style="display:block;text-align:left;">Follow Oxpeckers on Twitter</a>
+							<a href="http://twitter.com/@OxCIEJ" id="twitter-link" style="display:block;text-align:left;">Oxpeckers on Twitter</a>
 						</div>
 						<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
 						<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/@OxCIEJ.json?callback=twitterCallback2&count=5"></script>

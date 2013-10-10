@@ -59,7 +59,7 @@ body.logged-in {
 	height: 200px;
 }
 
-.main-content, .section-title, .highlight-content, aside#sidebar-footer, .partners, .share-title, .jeo-share-widget, .share-page div.container.emboss {
+.main-content, .section-title, .highlight-content, aside#sidebar-footer, .partners, .share-title {
 	margin: 0 20px;
 }
 
