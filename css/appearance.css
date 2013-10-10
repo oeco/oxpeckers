@@ -187,20 +187,33 @@ a.associated:hover {
 
 .thumb-highlights, .thumb-staff {
 	background:rgba(0,0,0,0.6);
-	height:140px;
-	width:140px;
 	margin:0 20px 10px 10px;
 	float:left;
+	overflow:hidden;
+}
+
+.thumb-highlights {
+	height:140px;
+	width:140px;
 	-webkit-border-radius: 70px;
 	-khtml-border-radius: 70px;
 	-moz-border-radius: 70px;
 	-o-border-radius: 70px;
 	border-radius: 70px;
-	overflow:hidden;
+}
+
+.thumb-staff {
+	height:100px;
+	width:100px;
+	-webkit-border-radius: 50px;
+	-khtml-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+	border-radius: 50px;
 }
 
 .text-staff {
-	min-height:140px;
+	min-height:100px;
 	margin-bottom: 10px;
 }
 

@@ -471,7 +471,7 @@ border-radius: 8px;
 background: rgba(0,0,0,0.8);
 }
 
-.leaflet-control-container .leaflet-top .map-tooltip, .leaflet-control-container .leaflet-control.jeo-filter-layers .switch-layers li, .leaflet-control-container .leaflet-control.jeo-filter-layers .swap-layers li {
+.leaflet-control-container .leaflet-top .map-tooltip, .leaflet-control-container .leaflet-control.jeo-filter-layers, .leaflet-control-container .leaflet-control.jeo-filter-layers {
 	color:#fff;
 	-webkit-border-radius: 8px;
 	-khtml-border-radius: 8px;
@@ -489,5 +489,7 @@ background: rgba(0,0,0,0.8);
 }
 
 .leaflet-control-container .leaflet-top .map-tooltip {
-	height: 73px;
+	height: 65px;
+	width:230px;
+	font-family: "Share Bold"
 }
