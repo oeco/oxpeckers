@@ -43,6 +43,17 @@
 	border:0;
 }
 
+.marker-cluster {
+	background: url(../images/marker-cluster.png) center no-repeat !important;
+	color: #f0f0f0;
+}
+
+.marker-cluster div {
+	background: transparent !important;
+	font-family: "Share Bold" !important;
+	font-size: 12px;
+}
+
 /*
 
 .map-container .map .leaflet-control-container .leaflet-top {
