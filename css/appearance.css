@@ -152,8 +152,13 @@ a.associated:hover {
 }
 
 #oxmasthead #oxmasthead-nav #searchform {
-	margin:30px 10px 10px 0;
+	margin:30px 0 10px 0;
 	float:right;
+}
+
+#oxmasthead #oxmasthead-nav .twitter-follow-button {
+	float: right;
+	margin-top: 20px;
 }
 
 #oxmasthead #oxmasthead-nav #searchform input#s {
