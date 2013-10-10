@@ -44,7 +44,8 @@
 }
 
 .marker-cluster {
-	background: url(../images/marker-cluster.png) center no-repeat !important;
+	background: url(../images/marker-cluster.png) no-repeat !important;
+	background-position: 11px 12px !important;
 	color: #f0f0f0;
 }
 
