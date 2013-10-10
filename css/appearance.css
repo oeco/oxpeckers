@@ -366,7 +366,7 @@ li.post-columns {
 }
 
 #get-involved {
-	background: url('../images/littleoxpecker.png') no-repeat top left;
+	background: rgba(230, 217, 186, 0.6) url('../images/littleoxpecker.png') no-repeat top left;
 	padding: 15px;
 	margin-right: 10px;
 }
