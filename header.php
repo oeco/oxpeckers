@@ -47,7 +47,6 @@
 						<!--<a href="https://twitter.com/OxCIEJ" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @OxCIEJ</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->						<nav id="main-nav">
 						<div id="twitter_div">
-						<ul id="twitter_update_list">
 							<a href="http://twitter.com/@OxCIEJ" id="twitter-link" style="display:block;text-align:left;">Follow Oxpeckers on Twitter</a>
 						</div>
 						<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
