@@ -37,7 +37,7 @@ if($allow_layers) {
 }
 ?>
 
-<section id="content">
+<section id="content" class="share-page">
 <div class="container">
 	<header class="share-title">
 		<!--<div class="share-title">
@@ -230,7 +230,7 @@ if($allow_layers) {
 		</div>
 </div>
 </div>
-		<div class="container emboss">
+		<div class="container">
 			<!--<div class="twelve columns">-->
 				<h2 class="preview-title"><?php _e('Map preview', 'jeo'); ?></h2>
 			<!--</div>
