@@ -19,7 +19,7 @@
 }
 
 .leaflet-top {
-	top: 40px !important;
+	top: 50px !important;
 }
 
 .leaflet-bottom.leaflet-left {
@@ -36,6 +36,11 @@
 
 .leaflet-top.leaflet-right {
 	z-index: 9999;
+}
+
+.leaflet-div-icon {
+	background: transparent;
+	border:0;
 }
 
 /*
@@ -90,18 +95,15 @@
 
 .jeo-date-range-slider .ui-rangeSlider .ui-rangeSlider-innerBar {
 	background: url(../images/bgtimeline.png);
+	height: 12px;
+	border: none !important;
 }
 
 .jeo-date-range-slider .ui-rangeSlider .ui-rangeSlider-bar {
 	background: rgba(50,50,50,0.7);
 }
 
-.ui-rangeSlider .ui-rangeSlider-innerBar {
-	height: 12px;
-	border: none !important;
-}
-
-.ui-rangeSlider .ui-rangeSlider-handle {
+.jeo-date-range-slider .ui-rangeSlider .ui-rangeSlider-handle {
 	background: rgba(114, 0, 0, 0.8);
 	width: 4px;
 	height: 15px;
@@ -111,7 +113,7 @@
 	background: rgba(0,0,0,0.6);
 }
 
-.ui-rangeSlider-label .ui-rangeSlider-label-value {
+.jeo-date-range-slider .ui-rangeSlider-label .ui-rangeSlider-label-value {
 	background: #000000;
 	padding: 5px 7px;
 	font-size: 11px;
@@ -457,8 +459,7 @@ border-radius: 8px;
 background: rgba(0,0,0,0.8);
 }
 
-.leaflet-control.jeo-filter-layers .switch-layers li, .leaflet-control.jeo-filter-layers .swap-layers li {
-	border-bottom:none;
+.leaflet-control-container .leaflet-top .map-tooltip, .leaflet-control-container .leaflet-control.jeo-filter-layers .switch-layers li, .leaflet-control-container .leaflet-control.jeo-filter-layers .swap-layers li {
 	color:#fff;
 	-webkit-border-radius: 8px;
 	-khtml-border-radius: 8px;
@@ -469,4 +470,12 @@ background: rgba(0,0,0,0.8);
 	width:200px;
 	text-align: center;
 	font-family: "Share Regular"
+}
+
+.leaflet-control-container .leaflet-control.jeo-filter-layers .switch-layers li, .leaflet-control-container .leaflet-control.jeo-filter-layers .swap-layers li {
+	border-bottom:none;
+}
+
+.leaflet-control-container .leaflet-top .map-tooltip {
+	height: 73px;
 }
