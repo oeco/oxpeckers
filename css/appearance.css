@@ -188,6 +188,7 @@ a.associated:hover {
 	height: 40px;
 	width: 500px;
 	float: right;
+	margin-top:10px;
 }
 
 #main-nav #twitter_div {
@@ -203,11 +204,11 @@ a.associated:hover {
 	padding-right: 10px;
 }
 
-#twitter_update_list a {
+#main-nav #twitter_update_list a {
 	padding-left: 10px;
 }
 
-#menu-header_menu li, #twitter_update_list a {
+#menu-header_menu li, #main-nav #twitter_update_list a {
 	font-size: 18px;
 	font-family: "Share Bold";
 	text-shadow:1px 1px 3px rgba(0,0,0,0.6);
