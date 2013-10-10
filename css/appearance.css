@@ -184,6 +184,30 @@ a.associated:hover {
 	width:200px;
 }
 
+#main-nav {
+	height: 40px;
+	width: 500px;
+	float: right;
+}
+
+#main-nav #twitter_div {
+	float: right;
+}
+
+.menu-header_menu-container {
+float: right;
+}
+
+#menu-header_menu li {
+border-right: 1px solid #521010;
+padding-right: 20px;
+}
+
+#menu-header_menu li, #twitter_update_list a {
+font-size: 18px;
+font-family: "Share Bold";
+}
+
 
 .thumb-highlights, .thumb-staff {
 	background:rgba(0,0,0,0.6);
