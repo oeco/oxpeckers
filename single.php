@@ -7,7 +7,12 @@
 			<div class="container">
 				<div class="section-title emboss">
 					<h1><?php the_title(); ?></h1>
-						<p class="credits"><span class="lsf">&#xE137;</span> <?php _e('by', 'jeo'); ?> <?php the_author(); ?> | <span class="lsf">&#xE12b;</span> <?php the_date(); ?></p>
+						<p class="credits"><span class="lsf">&#xE137;</span> <?php _e('by', 'jeo'); ?> <?php the_author(); ?> | <span class="lsf">&#xE12b;</span> <?php the_date(); ?>
+					<?php
+					$print_url = oxpeckers_get_print_url();
+					if($print_url) : ?>
+						<span class="lsf">&#xE10a;</span> <a class="print" href="<?php echo $print_url; ?>"><?php _e('Print this map', 'oxpeckers'); ?></a>
+					<?php endif; ?></p>
 					<?php the_category(); ?>
 				</div>
                 

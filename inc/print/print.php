@@ -131,7 +131,10 @@ class Oxpeckers_Print {
 		global $post;
 		$post_id = $post_id ? $post_id : $post->ID;
 
-		return add_query_arg(array('print' => 1), get_permalink($post_id));
+		if(jeo_get_marker_coordinates())
+			return add_query_arg(array('print' => 1), get_permalink($post_id));
+
+		return false;
 
 	}
 
