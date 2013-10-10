@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', 'oxpeckers_scripts', 100);
 
 function oxpeckers_home_page_query($query) {
 	if($query->is_main_query() && (is_front_page() || is_home())) {
-		$query->set('category_name', 'oxpeckers-investigations');
+		$query->set('category_name', 'investigations');
 		$query->set('posts_per_page', 4);
 	}
 	return $query;
