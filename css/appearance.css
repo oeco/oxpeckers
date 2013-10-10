@@ -195,17 +195,22 @@ a.associated:hover {
 }
 
 .menu-header_menu-container {
-float: right;
+	float: right;
 }
 
 #menu-header_menu li {
-border-right: 1px solid #521010;
-padding-right: 20px;
+	border-right: 1px solid #521010;
+	padding-right: 10px;
+}
+
+#twitter_update_list a {
+	padding-left: 10px;
 }
 
 #menu-header_menu li, #twitter_update_list a {
-font-size: 18px;
-font-family: "Share Bold";
+	font-size: 18px;
+	font-family: "Share Bold";
+	text-shadow:1px 1px 3px rgba(0,0,0,0.6);
 }
 
 
