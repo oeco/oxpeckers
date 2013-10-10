@@ -7,8 +7,6 @@
 
 class Oxpeckers_RhinoData {
 
-	var $csv = 'https://docs.google.com/spreadsheet/pub?key=0Anx0wudPaqDTdDZTR1d3dl9DejNsUWpPSG4tM3VGSFE&single=true&gid=0&output=csv';
-
 	function __construct() {
 
 		add_action('init', array($this, 'init'));

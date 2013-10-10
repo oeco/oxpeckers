@@ -21,6 +21,8 @@
 
 			layers[key]._data = layerData;
 
+			layers[key]._markers = [];
+
 			$.each(layerData, function(i, m) {
 
 				if(m.latitude && m.longitude) {
@@ -36,6 +38,8 @@
 					m._marker = marker;
 
 					updateMarker(getTotalByLocation(m), m);
+
+					layers[key]._markers.push(marker);
 
 					marker.addTo(layers[key]);
 
@@ -55,6 +59,28 @@
 		filter().init();
 
 	});
+
+	function toggleVisibility(turnVisible) {
+
+		if(turnVisible) {
+
+			$.each(currentLayer._markers, function(i, marker) {
+
+				marker.setZIndexOffset(9999);
+
+			});
+
+		} else {
+
+			$.each(currentLayer._markers, function(i, marker) {
+
+				marker.setZIndexOffset(-100);
+
+			});
+
+		}
+
+	}
 
 	function getTotalByLocation(m, years) {
 
@@ -182,6 +208,14 @@
 				var el = $('<div class="' + key + ' layer-filter" />');
 				el.append('<input type="radio" name="rhino-crisis-layer" id="layer_' + key + '" value="' + key + '" />');
 				el.append('<label for="layer_' + key + '"><span class="icon"></span> ' + layer_name + '</label>');
+
+				el.on('mouseenter', function() {
+					toggleVisibility(true);
+				});
+
+				el.on('mouseleave', function() {
+					toggleVisibility(false);
+				});
 
 				layerSelect.append(el);
 			}
