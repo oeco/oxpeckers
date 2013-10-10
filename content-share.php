@@ -47,7 +47,7 @@ if($allow_layers) {
 		</div>-->
 	</header>
     </div>
-<div class="container">
+<div class="container" class="share-page">
 	<div id="jeo-share-widget">
 		<div id="configuration">
 			<div class="container row">
@@ -242,7 +242,7 @@ if($allow_layers) {
 		</div>
 
 	</div>
-</div>
+</section>
 
 
 <script type="text/javascript">
@@ -250,7 +250,5 @@ if($allow_layers) {
 		jeo_share_widget.controls();
 	});
 </script>
-
-<div class="clearfloat">
 
 <?php get_footer(); ?>
