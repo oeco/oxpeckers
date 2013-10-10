@@ -78,4 +78,12 @@ function oxpeckers_related_posts_content($content) {
 }
 add_filter('the_content', 'oxpeckers_related_posts_content');
 
+function oxpeckers_markerclusterer_options($options) {
+
+	$options['maxClusterRadius'] = 20;
+
+	return $options;
+}
+add_filter('jeo_markerclusterer_options', 'oxpeckers_markerclusterer_options');
+
 ?>
