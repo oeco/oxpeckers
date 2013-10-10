@@ -88,6 +88,14 @@
 	font-size: 14px;
 }
 
+.jeo-date-range-slider .ui-rangeSlider .ui-rangeSlider-innerBar {
+	background: url(../images/bgtimeline.png);
+}
+
+.jeo-date-range-slider .ui-rangeSlider .ui-rangeSlider-bar {
+	background: rgba(50,50,50,0.7);
+}
+
 
 
 /* = Zoom
