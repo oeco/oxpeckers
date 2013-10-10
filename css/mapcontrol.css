@@ -90,6 +90,8 @@
 
 .leaflet-control.jeo-geocode .map-search input {
 	color: #fff;
+	font-family: "Share Regular";
+	font-size: 12px;
 }
 
 .leaflet-control.jeo-geocode .geocode-results .widget-title {
