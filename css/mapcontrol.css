@@ -121,6 +121,19 @@
 	height: 15px;
 }
 
+.jeo-date-range-slider .ui-rangeSlider-label:after {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #000;
+	bottom: 1px;
+	margin-left: -6px;
+}
+
+.jeo-date-range-slider .ui-rangeSlider-label:before {
+	border: 0;
+}
+
+
 .jeo-date-range-slider .ui-rangeSlider .ui-rangeSlider-bar {
 	background: rgba(0,0,0,0.6);
 }
