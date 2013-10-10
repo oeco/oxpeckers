@@ -1,4 +1,4 @@
-<div class="brands">
+<div class="brands clearfix">
 	<div class="partners">
 		<h4><?php _e('Partners', 'oxpeckers'); ?></h4>
 	    <div class="ami">AMI</div>

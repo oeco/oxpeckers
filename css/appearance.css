@@ -322,12 +322,6 @@ li.post-columns {
 	padding: 3px 0;
 }
 
-.partners {
-	height: 160px;
-	width: 800px;
-	margin: 0 auto 30px;
-}
-
 .ami, .chinaafrica, .ecolab, .fair, .hacks, .ancir, .anic {
 	text-indent:-99999px;
 	width: 160px;
@@ -361,7 +355,6 @@ li.post-columns {
 
 .anic {
 	background: url('../images/brands/anic.png') no-repeat center left;
-	float:right;
 	width: 240px;
 }
 
@@ -406,4 +399,10 @@ padding: 0 10px 0 0;
 	margin: 0;
 	margin-bottom: -30px;
 	margin-top: 20px;
+	text-align: left;
+	margin-left: 40px;
+}
+
+.footer-brands {
+	margin: 0 20px;
 }
