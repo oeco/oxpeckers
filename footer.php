@@ -1,10 +1,17 @@
-<div class="partners">
-	<h4><?php _e('Partners', 'oxpeckers'); ?></h4>
-    <div class="ami">AMI</div>
-    <div class="chinaafrica">China Africa Reporting Project</div>
-    <div class="ecolab">Ecolab</div>
-    <div class="fair">Fair</div>
-    <div class="hacks">HacksHackers Africa</div>
+<div class="brands">
+	<div class="partners">
+		<h4><?php _e('Partners', 'oxpeckers'); ?></h4>
+	    <div class="ami">AMI</div>
+	    <div class="chinaafrica">China Africa Reporting Project</div>
+	    <div class="ecolab">Ecolab</div>
+	    <div class="fair">Fair</div>
+	    <div class="hacks">HacksHackers Africa</div>
+	</div>
+	<div class="footer-brands">
+		<h4><?php _e('Project by', 'oxpeckers'); ?></h4>
+		<div class="ancir">ANCIR</div>
+		<div class="anic">ANIC</div>
+	</div>
 </div>
 
 <footer id="sidebar-footer">
@@ -27,11 +34,6 @@
 
 
 	<div class="clearfix">
-		<div class="footer-brands">
-			<h4><?php _e('Project by', 'oxpeckers'); ?></h4>
-			<div class="ancir">ANCIR</div>
-			<div class="anic">ANIC</div>
-		</div>
 
 
 		<div class="credits">

@@ -61,6 +61,11 @@
 
 #oxbody .leaflet-bar a {
 	background-color: rgba(0,0,0,0.8);
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
 	color: #fff !important;
 	border: 0;
 	margin-bottom: 1px;
@@ -76,6 +81,11 @@
 
 .leaflet-control.jeo-geocode {
 	background: rgba(0,0,0,0.8);
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
 }
 
 .leaflet-control.jeo-geocode .map-search input {
@@ -83,16 +93,23 @@
 }
 
 .leaflet-control.jeo-geocode .geocode-results .widget-title {
-	border-top: 1px solid #000;
+	border-top: 1px solid rgba(0,0,0,0.8);
 }
 
 .leaflet-control.jeo-geocode .geocode-results ul li {
-	border-bottom: 1px solid #000;
+	border-top: 1px solid rgba(0,0,0,0.8);
+	border-bottom: 0;
+	-webkit-border-radius: 0 0 8px 8px;
+	-khtml-border-radius: 0 0 8px 8px;
+	-moz-border-radius: 0 0 8px 8px;
+	-o-border-radius: 0 0 8px 8px;
+	border-radius: 0 0 8px 8px;
 }
 
 .leaflet-control.jeo-geocode .geocode-results ul li:hover {
 	background-color: #000;
-	border-bottom: 1px solid #000;
+	border-top: 1px solid rgba(0,0,0,0.8);
+	border-bottom: 0;
 }
 
 .leaflet-control.jeo-geocode .map-search {
