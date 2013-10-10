@@ -38,11 +38,6 @@
 	z-index: 9999;
 }
 
-.leaflet-div-icon {
-	background: transparent;
-	border: 0;
-}
-
 /*
 
 .map-container .map .leaflet-control-container .leaflet-top {
@@ -101,6 +96,28 @@
 	background: rgba(50,50,50,0.7);
 }
 
+.ui-rangeSlider .ui-rangeSlider-innerBar {
+	height: 12px;
+	border: none !important;
+}
+
+.ui-rangeSlider .ui-rangeSlider-handle {
+	background: rgba(114, 0, 0, 0.8);
+	width: 4px;
+	height: 15px;
+}
+
+.jeo-date-range-slider .ui-rangeSlider .ui-rangeSlider-bar {
+	background: rgba(0,0,0,0.6);
+}
+
+.ui-rangeSlider-label .ui-rangeSlider-label-value {
+	background: #000000;
+	padding: 5px 7px;
+	font-size: 11px;
+	font-family: "Share Bold";
+	color: #FFF;
+}
 
 
 /* = Zoom
@@ -434,69 +451,22 @@ border-radius: 8px;
 }
 
 
-
-
-/* = Featured Content on Map
+/* = Switch and Tooltips
 -------------------------------------------------------------- */
-.mapfeat-container {
-top: -350px;
-z-index: 6;
-width: 340px;
-height: 271px;
-margin: 0;
-max-width: 340px;
-left: 20px;
-right: 0;
-position: absolute;
-background: url('../images/bg-featured-map.png') no-repeat bottom left !important;
-}
-
-.posts-section.featured {
-position: relative;
-width: 320px;
-height: 320px;
-text-align:left;
-border-bottom: none !important;
-}
-
-.featured-content {
-width:300px;
-height:240px;
-overflow: hidden;
-position:relative;
-top:0;
-background:none;
-float:left;
-padding:30px 20px 0 20px;
-text-align: left;
-text-shadow:0px 0px 4px rgba(255,255,255,0.6);
-}
-
-.featured-list {
-overflow: hidden;
-padding:0 !important;
-}
-
-/*.posts-section.featured .container{padding-top:20px;}
-
-.posts-section.featured .container .featured-content{position:relative;z-index:3;background:rgba(255, 255, 255, 0.9);-webkit-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-khtml-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-moz-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-o-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-webkit-border-radius:3px;-khtml-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding:20px;overflow:hidden;}
-
-.posts-section.featured .container .featured-content li{position:relative;top:0;left:-800px;-webkit-transition:left 0.2s ease-in-out;-khtml-transition:left 0.2s ease-in-out;-moz-transition:left 0.2s ease-in-out;-o-transition:left 0.2s ease-in-out;transition:left 0.2s ease-in-out;height:0;margin:0;}
-
-.posts-section.featured .container .featured-content li.active{left:0;height:auto;}
-
-
-.featured-content{position:relative;z-index:3;background:rgba(255, 255, 255, 0.9);-webkit-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-khtml-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-moz-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-o-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.3);-webkit-border-radius:3px;-khtml-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding:20px;overflow:hidden;}*/
-
-.mapfeatured-content li{position:relative;top:0;left:-800px;-webkit-transition:left 0.2s ease-in-out;-khtml-transition:left 0.2s ease-in-out;-moz-transition:left 0.2s ease-in-out;-o-transition:left 0.2s ease-in-out;transition:left 0.2s ease-in-out;height:0;margin:0;}
-
-.mapfeatured-content li.active{left:0;height:auto;}
-
 .leaflet-control.jeo-filter-layers {
 background: rgba(0,0,0,0.8);
 }
 
-ul.switch-layers li {
+.leaflet-control.jeo-filter-layers .switch-layers li, .leaflet-control.jeo-filter-layers .swap-layers li {
 	border-bottom:none;
 	color:#fff;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	padding:10px;
+	width:200px;
+	text-align: center;
+	font-family: "Share Regular"
 }
