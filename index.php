@@ -54,6 +54,7 @@ if(is_home() || is_front_page()) {
 			<style>
 				.investigations-cats ul {
 					width: 100%;
+					margin-top: 20px;
 				}
 				.investigations-cats ul li {
 					text-align: center;
