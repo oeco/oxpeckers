@@ -352,6 +352,11 @@ li.post-columns {
 	width: 240px;
 }
 
+#get-involved {
+	background: url('../images/littleoxpecker.png') no-repeat top left;
+	padding: 15px;
+	margin-right: 10px;
+}
 
 .footer-menu {
 	width:31%;
