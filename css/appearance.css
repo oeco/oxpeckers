@@ -56,7 +56,7 @@ body.logged-in {
 }
 
 .highlight-content {
-	height: 200px;
+	height: 240px;
 }
 
 .main-content, .section-title, .highlight-content, aside#sidebar-footer, .partners, .share-title {
@@ -117,7 +117,6 @@ a.associated:hover {
 	width: auto;
 	height: auto;
 }
-
 
 .oxheader .oxpecker-ilus {
 	float: left;
