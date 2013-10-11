@@ -64,7 +64,7 @@ body.logged-in {
 }
 
 a.associated {
-	margin:10px 0 0 10px;
+	margin:10px 10px 0 0;
 	width: 160px;
 	padding:5px 10px;
 	background:rgba(255,255,255,0.3);
