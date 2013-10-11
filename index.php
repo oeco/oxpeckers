@@ -33,10 +33,10 @@ if(is_home() || is_front_page()) {
 						foreach($investigations as $investigation) : 
 							$img = get_field('cat_image', 'category_' . $investigation->term_id);
 							?>
-								<li class="<?php echo $investigation->slug; ?> investigation">
+								<li class="<?php echo $investigation->slug; ?> investigation row">
 									<?php if($img) : ?>
 										<div class="investigation-thumb-container">
-											<a href="<?php echo get_term_link($investigation); ?>" title="<?php echo $investigation->name; ?>"><img src="<?php echo $img['sizes']['thumbnail']; ?>" class="investigation-thumb" /></a>
+											<a href="<?php echo get_term_link($investigation); ?>" title="<?php echo $investigation->name; ?>"><img src="<?php echo $img['sizes']['medium-thumb']; ?>" class="investigation-thumb" /></a>
 										</div>
 									<?php endif; ?>
 									<h3><a href="<?php echo get_term_link($investigation); ?>" title="<?php echo $investigation->name; ?>"><?php echo $investigation->name; ?></a></h3>
@@ -57,23 +57,18 @@ if(is_home() || is_front_page()) {
 					margin-top: 20px;
 				}
 				.investigations-cats ul li {
-					text-align: center;
-					margin-bottom: 20px;
-					width: 50%;
-					height: 370px;
-					float: left;
-					padding: 0 20px;
 					box-sizing: border-box;
 					-moz-box-sizing: border-box;
 					-webkit-box-sizing: border-box;
 					-khtml-box-sizing: border-box;
 				}
-				.investigations-cats ul li img {
-					border-radius: 75px;
-					margin-bottom: 20px;
+				.investigations-cats ul li .investigation-thumb-container {
+					float: left;
+					margin: 0 20px 20px 0;
 				}
 			</style>
-			<?php get_template_part('loop'); ?>
+
+			<?php // get_template_part('loop'); ?>
 
 			<!--<?php //query_posts(array('category_name' => 'reports', 'posts_per_page' => 3)); ?>
 			<div class="more-stories">
