@@ -24,7 +24,7 @@ if(is_home() || is_front_page()) {
 
 			<?php
 			$investigation_cat = get_category_by_slug('investigations');
-			$investigations = get_categories(array('child_of' => $investigation_cat->term_id, 'hide_empty' => false, 'number' => 4));
+			$investigations = get_categories(array('child_of' => $investigation_cat->term_id, 'hide_empty' => false));
 			if($investigations) :
 				?>
 				<div class="investigations-cats clearfix">
@@ -47,7 +47,6 @@ if(is_home() || is_front_page()) {
 						endforeach;
 						?>
 					</ul>
-					<p class="view-all"><a href="<?php echo get_term_link($investigation_cat); ?>"><?php _e('View all investigations', 'oxpeckers'); ?></a></p>
 				</div>
 				<?php
 			endif;
@@ -66,19 +65,6 @@ if(is_home() || is_front_page()) {
 				.investigations-cats ul li .investigation-thumb-container {
 					float: left;
 					margin: 0 20px 20px 0;
-				}
-				#oxbody .view-all a {
-					font-size: 20px;
-					line-height: 40px;
-					background: #521010;
-					color: #f0f0f0 !important;
-					display: block;
-					text-align: center;
-					border-radius: 8px;
-					-o-border-radius: 8px;
-					-moz-border-radius: 8px;
-					-khtml-border-radius: 8px;
-					-webkit-border-radius: 8px;
 				}
 			</style>
 
