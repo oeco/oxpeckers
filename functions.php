@@ -33,8 +33,8 @@ add_filter('jeo_marker_base_query', 'oxpeckers_map_marker_query');
 
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'medium-thumb', 300, 140, true );
-add_image_size( 'highlights-thumb', 140, 140 );
-add_image_size( 'small-thumb', 100, 100 );
+add_image_size( 'highlights-thumb', 140, 140, true );
+add_image_size( 'small-thumb', 100, 100, true );
 
 include_once(STYLESHEETPATH . '/inc/print/print.php');
 include_once(STYLESHEETPATH . '/inc/rhino-crisis/rhino-crisis.php');
