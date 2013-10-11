@@ -1,5 +1,5 @@
 <div class="container">
-<?php $highlights_query = new WP_Query(array('cat' => 2, 'posts_per_page' => 4)); ?>
+<?php $highlights_query = new WP_Query(array('category_name' => 'highlights', 'posts_per_page' => 4)); ?>
 	<?php if($highlights_query->have_posts()) : ?>
 		<section id="highlight-content" class="highlight-content">
 			<h2>Highlights</h2>
