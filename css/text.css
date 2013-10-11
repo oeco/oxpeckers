@@ -86,7 +86,7 @@ border-right:none;
 	margin: 0;
 }
 
-.content-container h2, .textwidget h3, h2.widget-title, .highlight-content h2 {
+.content-container h2, .textwidget h3, h2.widget-title {
 	font-size: 16px;
 	line-height:20px;
 	margin-bottom: 20px;
@@ -94,6 +94,17 @@ border-right:none;
 	text-align:left;
 	letter-spacing:0.06em;
 	text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+}
+
+.highlight-content h2 {
+	font-size: 16px;
+	line-height: 18px;
+	margin-bottom: 10px;
+	display: block;
+	text-align: right;
+	letter-spacing: 0.06em;
+	text-shadow: 0px 0px 4px 
+	rgba(0,0,0,0.3);
 }
 
 .content-container h2 {
@@ -117,7 +128,7 @@ h2.widget-title {
 }
 
 .post-excerpt  {
-	height:80px;
+	height:60px;
 	overflow:hidden;
 	margin:0;
 }

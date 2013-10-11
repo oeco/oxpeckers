@@ -17,8 +17,7 @@
 									<div class="post-text">
 										<header class="post-header">
 											<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-											<p class="credits">on <?php the_field('post_source'); ?> | <?php echo get_the_date(); ?></p>
-										</header>
+											<!--<p class="credits">on <?php the_field('post_source'); ?> | <?php echo get_the_date(); ?></p>-->								</header>
 										<section class="post-content">
 											<div class="post-excerpt">
 												<?php the_excerpt(); ?>
