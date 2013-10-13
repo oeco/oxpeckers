@@ -99,7 +99,7 @@ a.associated:hover {
 }
 
 .lighter {
-	background:rgba(210, 205, 95, 0.1);
+	background:rgba(210, 205, 95, 0.1) url('../images/bg-texture.png') repeat-x top right;
 }
 
 
@@ -447,11 +447,11 @@ ul#menu-footer_menu li:first-child {
 	padding: 0 10px 0 0;
 }
 
-.view-all a, .single a.associated {
+p.view-all a, .single a.associated {
 	font-size: 20px;
 	line-height: 40px;
-	background: #521010 url('../images/bg-texture.png') repeat-x bottom left;
-	color: #f0f0f0 !important;
+	height:40px;
+	background: #521010 url('../images/bg-texture.png') repeat-x top left;
 	display: block;
 	text-align: center;
 	border-radius: 8px;
@@ -460,6 +460,7 @@ ul#menu-footer_menu li:first-child {
 	-khtml-border-radius: 8px;
 	-webkit-border-radius: 8px;
 	text-shadow:1px 1px 3px rgba(0,0,0,0.6);
+	color: #fff !important;
 }
 
 #jeo-share-widget {
