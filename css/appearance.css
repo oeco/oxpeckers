@@ -154,7 +154,7 @@ a.associated:hover {
 }
 
 #oxmasthead #oxmasthead-nav #searchform {
-	margin:45px 0 10px 0;
+	margin:45px 20px 10px 0;
 	float:right;
 }
 
@@ -195,6 +195,7 @@ a.associated:hover {
 
 #main-nav #twitter_div {
 	float: right;
+	padding-right: 20px;
 }
 
 .menu-header_menu-container {
@@ -232,6 +233,11 @@ a.associated:hover {
 	-moz-border-radius: 70px;
 	-o-border-radius: 70px;
 	border-radius: 70px;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+	-khtml-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 0 10px 0 rgba(0,0,0,0.2);
+	-o-box-shadow:  0 0 10px 0 rgba(0,0,0,0.2);
+	box-shadow:  0 0 10px 0 rgba(0,0,0,0.2);
 }
 
 .thumb-staff {
@@ -265,6 +271,29 @@ li.post-columns {
 	margin: 0 0 20px 0;
 	background:none;
 	float:left;
+}
+
+.investigation h3 {
+	line-height: 25px;
+	font-size:24px;
+	margin:0 0 5px 0;
+}
+
+.investigation p.cat_description {
+	line-height: 20px;
+	height:80px;
+	margin:0;
+	overflow: hidden;
+}
+
+.investigation p.readmore {
+	line-height: 20px;
+	height:20px;
+	font-size:11px;
+	text-align:right;
+	margin:0 0 20px 0;
+	overflow: hidden;
+	border-top:1px solid #DDD;
 }
 
 .thumb-post {

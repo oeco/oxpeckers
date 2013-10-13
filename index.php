@@ -40,8 +40,8 @@ if(is_home() || is_front_page()) {
 										</div>
 									<?php endif; ?>
 									<h3><a href="<?php echo get_term_link($investigation); ?>" title="<?php echo $investigation->name; ?>"><?php echo $investigation->name; ?></a></h3>
-									<p><?php echo $investigation->description; ?></p>
-									<p><a href="<?php echo get_term_link($investigation); ?>"><?php _e('Read more', 'oxpeckers'); ?></a></p>
+									<p class="cat_description"><?php echo $investigation->description; ?></p>
+									<p class="readmore"><a href="<?php echo get_term_link($investigation); ?>"><?php _e('Read more', 'oxpeckers'); ?></a></p>
 								</li>
 							<?php
 						endforeach;
