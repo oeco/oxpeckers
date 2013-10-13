@@ -65,29 +65,48 @@ body.logged-in {
 a.associated {
 	margin:0;
 	padding:5px 10px;
-	-webkit-border-radius: 5px;
-	-khtml-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px;
 	color:#fff;
-}
-
-a.associated:hover {
-	color:rgb(190,125,30);
 }
 
 .actions a.associated {
 	margin:10px 10px 0 0;
 	width: 160px;
 	float:left;
-	color:#fff;
+	color:#521010;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
 	background:rgba(255,255,255,0.3);
 }
 
 .actions a.associated:hover {
-	background:rgba(255,255,255,0.8);
-	color:#fff;
+	background:rgba(255,255,255,0.6);
+}
+
+p.view-all a, .single a.associated {
+	font-size: 20px;
+	line-height: 40px;
+	height:40px;
+	background: #521010 url('../images/bg-texture.png') repeat-x top left;
+	display: block;
+	text-align: center;
+	border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	text-shadow:1px 1px 3px rgba(0,0,0,0.6);
+	color: #fff !important;
+}
+
+.single a.associated {
+	margin: 15px 0 0;
+}
+
+p.view-all a:hover, .single a.associated:hover {
+	color:rgba(190,125,30,1);
 }
 
 
@@ -454,22 +473,6 @@ ul#menu-footer_menu li {
 ul#menu-footer_menu li:first-child {
 	border-left: none;
 	padding: 0 10px 0 0;
-}
-
-p.view-all a, .single a.associated {
-	font-size: 20px;
-	line-height: 40px;
-	height:40px;
-	background: #521010 url('../images/bg-texture.png') repeat-x top left;
-	display: block;
-	text-align: center;
-	border-radius: 8px;
-	-o-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-khtml-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	text-shadow:1px 1px 3px rgba(0,0,0,0.6);
-	color: #fff !important;
 }
 
 #jeo-share-widget {
