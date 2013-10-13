@@ -48,12 +48,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #oxbody a {
-	color: #521010 !important;
+	color: #521010;
 	text-decoration:none;
 }
 
 #oxbody a:hover {
-	color: #600 !important;
+	color: #600;
 }
 
 .map-header_menu {
