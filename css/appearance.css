@@ -37,8 +37,8 @@ body.logged-in {
 -------------------------------------------------------------- */
 
 .section-title, .highlight-content, .share-title {
-/*	background: rgba(105,75,75,0.4) url('../images/bg-featured-box.png') no-repeat top left !important;*/
-	background: rgba(190,125,30,0.7);
+/*	background: rgba(105,75,75,0.4)  !important;*/
+	background: rgba(190,125,30,0.7) url('../images/bg-texture.png') repeat-x top left;
 	-webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.3);
 	-khtml-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.3);
