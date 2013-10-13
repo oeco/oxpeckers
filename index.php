@@ -67,19 +67,6 @@ if(is_home() || is_front_page()) {
 					float: left;
 					margin: 0 20px 20px 0;
 				}
-				#oxbody .view-all a {
-					font-size: 20px;
-					line-height: 40px;
-					background: #521010;
-					color: #f0f0f0 !important;
-					display: block;
-					text-align: center;
-					border-radius: 8px;
-					-o-border-radius: 8px;
-					-moz-border-radius: 8px;
-					-khtml-border-radius: 8px;
-					-webkit-border-radius: 8px;
-				}
 			</style>
 
 			<?php // get_template_part('loop'); ?>

@@ -96,7 +96,6 @@ a.associated:hover {
 	-o-border-radius: 10px;
 	border-radius: 10px;
 	padding: 20px;
-	background:rgba(255,255,255,0.3);
 }
 
 .lighter {
@@ -274,26 +273,26 @@ li.post-columns {
 }
 
 .investigation h3 {
-	line-height: 25px;
-	font-size:24px;
-	margin:0 0 5px 0;
+	line-height: 30px;
+	font-size: 26px;
+	margin: 0 0 10px 0;
 }
 
 .investigation p.cat_description {
 	line-height: 20px;
 	height:80px;
-	margin:0;
+	margin:0 0 10px 0;
 	overflow: hidden;
 }
 
 .investigation p.readmore {
 	line-height: 20px;
 	height:20px;
-	font-size:11px;
+	font-size:10px;
 	text-align:right;
 	margin:0 0 20px 0;
 	overflow: hidden;
-	border-top:1px solid #DDD;
+	border-top:1px dotted #DDD;
 }
 
 .thumb-post {
@@ -380,7 +379,7 @@ li.post-columns {
 .scptitle {
 	text-align: left;
 	border-bottom: 1px dotted #BBB;
-	padding: 3px 0;
+	padding: 5px 0;
 }
 
 .ami, .chinaafrica, .ecolab, .fair, .hacks, .ancir, .anic {
@@ -388,6 +387,10 @@ li.post-columns {
 	width: 160px;
 	height: 160px;
 	float: left;
+}
+
+.ecolab, .fair, .hacks, .ancir {
+	width: 130px;
 }
 
 .ami {
@@ -416,7 +419,7 @@ li.post-columns {
 
 .anic {
 	background: url('../images/brands/anic.png') no-repeat center left;
-	width: 240px;
+	width: 200px;
 }
 
 #get-involved {
@@ -433,15 +436,30 @@ li.post-columns {
 }
 
 ul#menu-footer_menu li {
-float: left;
-border-left: 1px solid #521010;
-padding: 0 10px;
-display: inline;
+	float: left;
+	border-left: 1px solid #521010;
+	padding: 0 10px;
+	display: inline;
 }
 
 ul#menu-footer_menu li:first-child {
-border-left: none;
-padding: 0 10px 0 0;
+	border-left: none;
+	padding: 0 10px 0 0;
+}
+
+.view-all a, .single a.associated {
+	font-size: 20px;
+	line-height: 40px;
+	background: #521010 url('../images/bg-texture.png') repeat-x bottom left;
+	color: #f0f0f0 !important;
+	display: block;
+	text-align: center;
+	border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	text-shadow:1px 1px 3px rgba(0,0,0,0.6);
 }
 
 #jeo-share-widget {
@@ -461,13 +479,9 @@ padding: 0 10px 0 0;
 	margin-bottom: -30px;
 	margin-top: 20px;
 	text-align: left;
-	margin-left: 40px;
-}
-
-.partners h4 {
-	margin-left: 18px !important;
 }
 
 .footer-brands {
 	margin: 0 20px;
+	float: right;
 }
