@@ -19,7 +19,7 @@
 }
 
 .leaflet-top {
-	top: 55px !important;
+	top: 0px !important;
 }
 
 .leaflet-bottom.leaflet-left {
@@ -438,6 +438,24 @@ border:none !important;
 	overflow:hidden;
 }
 
+#oxbody .map-legends .share {
+	display: block;
+	line-height: 16px;
+	text-transform: uppercase;
+	font-family: "Share Bold";
+	font-size: 14px;
+	padding: 5px;
+	text-align: center;
+	margin-top: 10px;
+	background: #521010 url('../images/bg-texture.png') repeat-x top left;
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+	color: #fff !important;
+}
+
 .map-tooltip {
 	background: rgba(0,0,0,0.8);
 	color: #fff;
@@ -551,6 +569,10 @@ background-image: url('../images/marker-rhino-deaths.png');
 background-image: url('../images/marker-poucher-deaths.png');
 }
 
+#protected-areas-layer {
+	background-image: url('../images/layer-protected-areas.png');
+}
+
 .rhino-crisis-filter .layer-filter {
 display: block;
 clear: none;
@@ -571,10 +593,10 @@ border-radius: 8px;
 /* = Switch and Tooltips
 -------------------------------------------------------------- */
 .leaflet-control.jeo-filter-layers {
-background: rgba(0,0,0,0.8);
+	/*background: rgba(0,0,0,0.8);*/
 }
 
-.leaflet-control-container .leaflet-top .map-tooltip, .leaflet-control-container .leaflet-control.jeo-filter-layers, .leaflet-control-container .leaflet-control.jeo-filter-layers {
+.leaflet-control-container .leaflet-top .map-tooltip {
 	color:#fff;
 	-webkit-border-radius: 8px;
 	-khtml-border-radius: 8px;
