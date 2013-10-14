@@ -614,7 +614,7 @@ border-radius: 8px;
 }
 
 .leaflet-control-container .leaflet-top .map-tooltip {
-	height: 65px;
+	height: 55px;
 	width:230px;
 	font-family: "Share Bold";
 	overflow: hidden;
