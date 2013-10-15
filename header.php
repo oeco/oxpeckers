@@ -26,19 +26,17 @@
 	<header id="oxmasthead">
 		<div class="container">
         <div class="oxheader">
-			<!--<div class="four columns">
-				<div class="site-meta">-->
-					<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>"><img class="oxpecker-ilus" src="<?php echo get_stylesheet_directory_uri(); ?>/images/oxpecker.png" alt="<?php bloginfo('name'); ?>" /></a>
-					<h1>
-						<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
-							<?php bloginfo('name'); ?>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" />
-						</a>
-					</h1>
-					<!--<h2><?php //bloginfo('description'); ?></h2>
+				<div class="site-title">
+					<div class="clearfix">
+						<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>"><img class="oxpecker-ilus" src="<?php echo get_stylesheet_directory_uri(); ?>/images/oxpecker.png" alt="<?php bloginfo('name'); ?>" /></a>
+						<h1>
+							<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
+								<?php bloginfo('name'); ?>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" />
+							</a>
+						</h1>
+					</div>
 				</div>
-			</div>-->
-			<!--<div class="eight columns">-->
 				<div id="oxmasthead-nav">
 					<!--<div class="clearfix">-->
 						<div style="clear:both;">
@@ -47,9 +45,6 @@
 						<!--<a href="https://twitter.com/OxCIEJ" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @OxCIEJ</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
 						<nav id="main-nav">
-						<div id="twitter_div">
-							<a href="http://twitter.com/@OxCIEJ" id="twitter-link" style="display:block;text-align:left;">Oxpeckers on Twitter</a>
-						</div>
 						<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
 						<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/@OxCIEJ.json?callback=twitterCallback2&count=5"></script>
 						<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>

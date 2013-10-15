@@ -143,9 +143,17 @@ p.view-all a:hover, .single a.associated:hover {
 }
 
 .displaying-map .oxheader .oxpecker-ilus {
-	margin-top: -60px;
+	margin-top: -110px;
 	width: auto;
 	height: auto;
+}
+
+.oxheader {
+	padding: 50px 0;
+}
+
+.oxheader .site-title {
+	float: left;
 }
 
 .oxheader .oxpecker-ilus {
@@ -153,7 +161,6 @@ p.view-all a:hover, .single a.associated:hover {
 	position: relative;
 	z-index: 1000;
 	border-radius: 120px;
-	margin-bottom: 40px;
 	margin-top: 20px;
 	height: 123px;
 	width: auto;
@@ -162,7 +169,7 @@ p.view-all a:hover, .single a.associated:hover {
 .oxheader h1 {
 	float: left;
 	line-height: 0;
-	margin: 50px 40px;
+	margin: 0 40px;
 }
 
 .oxheader h1 a {
@@ -181,7 +188,7 @@ p.view-all a:hover, .single a.associated:hover {
 }
 
 #oxmasthead #oxmasthead-nav #searchform {
-	margin:45px 20px 10px 0;
+	margin:0 10px 10px 0;
 	float:right;
 }
 
@@ -215,14 +222,8 @@ p.view-all a:hover, .single a.associated:hover {
 
 #main-nav {
 	height: 40px;
-	width: 500px;
 	float: right;
 	margin-top:20px;
-}
-
-#main-nav #twitter_div {
-	float: right;
-	padding-right: 20px;
 }
 
 .menu-header_menu-container {
@@ -231,7 +232,12 @@ p.view-all a:hover, .single a.associated:hover {
 
 #menu-header_menu li {
 	border-right: 1px solid #521010;
-	padding-right: 10px;
+	padding: 0 10px;
+	float: left;
+}
+
+#menu-header_menu li:last-child {
+	border: 0;
 }
 
 #main-nav #twitter_div a {
@@ -497,4 +503,54 @@ ul#menu-footer_menu li:first-child {
 .footer-brands {
 	margin: 0 20px;
 	float: right;
+}
+
+@media only screen and (max-width: 990px) {
+
+	.oxheader h1 img {
+		width: 200px;
+	}
+
+	.displaying-map .oxheader .oxpecker-ilus {
+		height: 100px;
+		margin-top: -30px;
+	}
+
+	#main-nav {
+		margin-top: 0;
+	}
+
+	.oxheader {
+		padding: 50px 0 0;
+	}
+
+}
+
+@media only screen and (max-width: 771px) {
+
+	.oxheader .site-title {
+		margin-bottom: 20px;
+	}
+
+	.oxheader h1 {
+		margin-right: 0;
+	}
+
+	#main-nav,
+	#oxmasthead #oxmasthead-nav,
+	#oxmasthead #oxmasthead-nav #searchform,
+	.menu-header_menu-container {
+		float: none;
+	}
+
+	.latestnews, .single-post .content, .content-container {
+		width: auto !important;
+		float: none !important;
+	}
+
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
 }

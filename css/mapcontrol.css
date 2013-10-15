@@ -619,3 +619,12 @@ border-radius: 8px;
 	font-family: "Share Bold";
 	overflow: hidden;
 }
+
+
+@media only screen and (max-width: 730px) {
+
+	.jeo-date-range-slider {
+		display: none !important;
+	}
+	
+}
