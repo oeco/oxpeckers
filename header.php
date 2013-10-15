@@ -25,7 +25,7 @@
 <div id="oxbody" class="<?php if( is_front_page() || is_single()) { echo "withmap"; } else { echo "withoutmap"; } ?>">
 	<header id="oxmasthead">
 		<div class="container">
-        <div class="oxheader">
+        <div class="oxheader clearfix">
 				<div class="site-title">
 					<div class="clearfix">
 						<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>"><img class="oxpecker-ilus" src="<?php echo get_stylesheet_directory_uri(); ?>/images/oxpecker.png" alt="<?php bloginfo('name'); ?>" /></a>

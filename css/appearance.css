@@ -149,7 +149,7 @@ p.view-all a:hover, .single a.associated:hover {
 }
 
 .oxheader {
-	padding: 50px 0;
+	padding: 50px 0 0;
 }
 
 .oxheader .site-title {
@@ -161,7 +161,7 @@ p.view-all a:hover, .single a.associated:hover {
 	position: relative;
 	z-index: 1000;
 	border-radius: 120px;
-	margin-top: 20px;
+	margin-top: -35px;
 	height: 123px;
 	width: auto;
 }
