@@ -14,6 +14,12 @@ if(is_home() || is_front_page()) {
 }
 ?>
 
+<?php if(is_active_sidebar('featured_links')) : ?>
+	<div class="featured-links clearfix">
+		<?php dynamic_sidebar('featured_links'); ?>
+	</div>
+<?php endif; ?>
+
 <div class="container">
 
 	<div class="main-content">
@@ -66,6 +72,9 @@ if(is_home() || is_front_page()) {
 				.investigations-cats ul li .investigation-thumb-container {
 					float: left;
 					margin: 0 20px 20px 0;
+				}
+				.investigations-cats ul li .investigation-thumb-container img {
+					max-width: 100%;
 				}
 			</style>
 

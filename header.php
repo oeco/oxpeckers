@@ -38,18 +38,14 @@
 					</div>
 				</div>
 				<div id="oxmasthead-nav">
-					<!--<div class="clearfix">-->
-						<div style="clear:both;">
-							<?php get_search_form(); ?>
-						</div>
-						<!--<a href="https://twitter.com/OxCIEJ" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @OxCIEJ</a>
+					<?php get_search_form(); ?>
+					<!--<a href="https://twitter.com/OxCIEJ" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @OxCIEJ</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
-						<nav id="main-nav">
-						<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-						<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/@OxCIEJ.json?callback=twitterCallback2&count=5"></script>
-						<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
-						</nav>
-					<!--</div>-->
+					<nav id="main-nav">
+					<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+					<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/@OxCIEJ.json?callback=twitterCallback2&count=5"></script>
+					<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
+					</nav>
 				</div>
 			</div>
         <!--</div>-->

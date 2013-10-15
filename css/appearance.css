@@ -505,6 +505,54 @@ ul#menu-footer_menu li:first-child {
 	float: right;
 }
 
+
+
+
+/*
+ * Home
+ * Featured links
+ */
+
+.featured-links {
+	margin: 0 20px 20px;
+}
+
+.featured-links .featured-link {
+	width: 33.33%;
+	float: left;
+}
+
+.featured-links .featured-link .widget-content {
+	padding: 20px 40px;
+	margin: 0 10px;
+}
+
+.featured-links .featured-link:first-child .widget-content {
+	margin: 0 10px 0 0;
+}
+
+.featured-links .featured-link:last-child .widget-content {
+	margin: 0 0 0 10px;
+}
+
+
+.featured-links .featured-link .widget-content .lsf {
+	font-size: 120px;
+	line-height: 120px;
+	float: left;
+	margin: 0 40px 0 0;
+	color: #666;
+}
+
+.featured-links .featured-link .widget-content h3 {
+	color: #333;
+	text-shadow: 0 0 0;
+	font-size: 32px;
+	line-height: 38px;
+	padding-top: 20px;
+	margin-bottom: 0;
+}
+
 @media only screen and (max-width: 990px) {
 
 	.oxheader h1 img {
@@ -526,10 +574,25 @@ ul#menu-footer_menu li:first-child {
 
 }
 
+@media only screen and (min-width: 771px) and (max-width: 990px) {
+
+
+	.featured-links .featured-link .widget-content {
+		padding: 20px;
+	}
+
+	.featured-links .featured-link .widget-content .lsf {
+		font-size: 90px;
+		margin: 0 20px 0 0;
+	}
+
+}
+
 @media only screen and (max-width: 771px) {
 
 	.oxheader .site-title {
 		margin-bottom: 20px;
+		float: none;
 	}
 
 	.oxheader h1 {
@@ -537,9 +600,7 @@ ul#menu-footer_menu li:first-child {
 	}
 
 	#main-nav,
-	#oxmasthead #oxmasthead-nav,
-	#oxmasthead #oxmasthead-nav #searchform,
-	.menu-header_menu-container {
+	#oxmasthead #oxmasthead-nav {
 		float: none;
 	}
 
@@ -550,6 +611,40 @@ ul#menu-footer_menu li:first-child {
 
 	#sidebar {
 		width: auto;
+		float: none;
+	}
+
+	.featured-links .featured-link {
+		width: auto;
+		float: none;
+	}
+
+	.featured-links .featured-link .widget-content {
+		margin: 0 0 20px !important;
+	}
+
+	#oxmasthead #oxmasthead-nav #searchform {
+		float: left;
+		width: 50%;
+	}
+
+	.menu-header_menu-container {
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	.oxheader .oxpecker-ilus {
+		display: none;
+	}
+
+	.oxheader h1 {
+		margin-left: 0;
+	}
+
+	#oxmasthead #oxmasthead-nav #searchform,
+	.menu-header_menu-container {
 		float: none;
 	}
 

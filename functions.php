@@ -30,6 +30,20 @@ function oxpeckers_map_marker_query($query) {
 }
 add_filter('jeo_marker_base_query', 'oxpeckers_map_marker_query');
 
+function oxpeckers_register_sidebar() {
+
+	register_sidebar(array(
+		'name' => __('Featured links bar', 'oxpeckers'),
+		'id' => 'featured_links',
+		'before_widget' => '<div class="featured-link"><div class="widget-content clearfix emboss">',
+		'after_widget' => '</div></div>',
+		'before_title' => '<h2 style="display: none;">',
+		'after_title' => '</h2>'
+	));
+
+}
+add_action('widgets_init', 'oxpeckers_register_sidebar');
+
 
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'medium-thumb', 300, 140, true );
