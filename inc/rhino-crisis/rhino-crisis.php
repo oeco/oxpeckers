@@ -53,6 +53,9 @@ class Oxpeckers_RhinoData {
 				foreach($sources as $key => $csv) {
 
 					$csv = fopen($csv, 'r');
+                    
+                    if(!$csv)
+                        continue;
 
 					$headers = $arr = $content = array();
 
