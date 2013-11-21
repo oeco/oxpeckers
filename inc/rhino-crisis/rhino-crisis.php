@@ -91,7 +91,7 @@ class Oxpeckers_RhinoData {
 
 			}
 
-			//set_transient('humus_rhino_data', $data, 60*60*3);
+			set_transient('humus_rhino_data', $data, 60*60*24);
 
 		}
 
