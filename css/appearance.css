@@ -249,6 +249,16 @@ p.view-all a:hover, .single a.associated:hover {
 	text-shadow:1px 1px 3px rgba(0,0,0,0.6);
 }
 
+.feature-section > .wp-feature-box,
+.feature-section > .wp-feature-box-slider{
+	margin: 0 20px 40px;
+	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
 
 .thumb-highlights, .thumb-staff {
 	background:rgba(0,0,0,0.6);

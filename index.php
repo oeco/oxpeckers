@@ -8,11 +8,23 @@ if(is_home() || is_front_page()) {
 } 
 ?>
 
-<?php
-if(is_home() || is_front_page()) {
-	get_template_part('content', 'highlights');
-}
-?>
+<div class="feature-section">
+	<?php
+	if(is_home() || is_front_page()) {
+		$wfb = get_posts(array('post_type' => 'wp-feature-box', 'posts_per_page' => 2));
+		if($wfb) {
+			if(count($wfb) === 1) {
+				$wfb = array_shift($wfb);
+				echo get_feature_box($wfb->ID);
+			} else {
+				echo get_feature_box_slider(false);
+			}
+		} else {
+			get_template_part('content', 'highlights');
+		}
+	}
+	?>
+</div>
 
 <?php if(is_active_sidebar('featured_links')) : ?>
 	<div class="featured-links clearfix">

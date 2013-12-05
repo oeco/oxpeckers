@@ -39,8 +39,8 @@
 }
 
 .leaflet-div-icon {
-	background: transparent;
-	border:0;
+	background: transparent !important;
+	border:0 !important;
 }
 
 .marker-cluster {
@@ -149,7 +149,7 @@
 /* = Timeline
 -------------------------------------------------------------- */
 .jeo-date-range-slider {
-	position: absolute;
+	position: absolute !important;
 	width: 50% !important;
 	background: rgba(0, 0, 0, 0.8) !important;
 	box-shadow: none !important;
