@@ -5,7 +5,7 @@
 		    <div class="chinaafrica">China Africa Reporting Project</div>
 		    <div class="ecolab">Ecolab</div>
 		    <div class="fair">Fair</div>
-		    <div class="hacks">HacksHackers Africa</div>
+		    <div class="gijn">Global Investigative Journalism Network</div>
 		</div>
 		<div class="footer-brands">
 			<h4><?php _e('Project by', 'oxpeckers'); ?></h4>
