@@ -425,14 +425,14 @@ li.post-columns {
 	padding: 5px 0;
 }
 
-.ami, .chinaafrica, .ecolab, .fair, .hacks, .ancir, .anic {
+.ami, .chinaafrica, .ecolab, .fair, .hacks, .gijn, .ancir, .anic {
 	text-indent:-99999px;
 	width: 160px;
 	height: 160px;
 	float: left;
 }
 
-.ecolab, .fair, .hacks, .ancir {
+.ecolab, .fair, .hacks, .gijn, .ancir {
 	width: 130px;
 }
 
